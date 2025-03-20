@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(100, 40)">
+    <!-- GDG Logo -->
+    <path d="M-60 -15l30 15l-30 15z" fill="#4285F4"/>
+    <path d="M-30 0l30 15l-30 15z" fill="#0F9D58"/>
+    <path d="M-30 0l30 -15l-30 -15z" fill="#DB4437"/>
+  </g>
+  <text x="110" y="35" font-family="Google Sans, Arial" font-size="16" font-weight="500" fill="#202124">Google</text>
+  <text x="110" y="55" font-family="Google Sans, Arial" font-size="16" font-weight="500" fill="#202124">Developer Groups</text>
+</svg> 
