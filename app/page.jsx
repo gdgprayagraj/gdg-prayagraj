@@ -1,48 +1,9 @@
 import Image from "next/image";
-import { ModeToggle } from "@/components/toggle-theme";
-import { MobileNav } from "@/components/MobileNav";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Navigation */}
-      <nav className="sticky top-0 z-50">
-        <div className="mx-auto max-w-7xl px-4 py-2 sm:py-4">
-          <div className="flex items-center justify-between bg-[#F3F4F6] dark:bg-gray-800 rounded-full px-4 sm:px-6 py-2">
-            <div className="flex items-center gap-2">
-              <div className="flex items-center gap-1">
-                <Image
-                  src="/devfest-logo.svg"
-                  alt="DevFest Logo"
-                  width={20}
-                  height={20}
-                  className="dark:invert sm:w-6 sm:h-6"
-                />
-                <span className="font-semibold text-xs sm:text-sm">Google Developer Group</span>
-                <span className="hidden sm:inline-flex px-2 py-0.5 bg-[#E5E7EB] dark:bg-gray-700 rounded-full text-xs">
-                  Prayagraj
-                </span>
-              </div>
-            </div>
-            
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
-              <Link href="/" className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Home</Link>
-              <Link href="/agenda" className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Agenda</Link>
-              <Link href="/speakers" className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Speakers</Link>
-              <Link href="/badge" className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Badge</Link>
-              <Link href="/team" className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">Team</Link>
-              <Link href="/faq" className="text-sm text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">FAQ</Link>
-              <ModeToggle />
-            </div>
-
-            {/* Mobile Navigation */}
-            <MobileNav />
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <main className="container mx-auto px-4 py-6 sm:py-8 lg:py-12">
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
@@ -70,11 +31,14 @@ export default function Home() {
             </div>
           </div>
           <div className="relative mt-8 lg:mt-0">
-            <div className="relative aspect-video rounded-lg overflow-hidden shadow-xl bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">DevFest 2024</h2>
-              </div>
-            </div>
+            <Image
+              src="https://res.cloudinary.com/startup-grind/image/fetch/c_scale,w_2560/c_crop,h_650,w_2560,y_0.32_mul_h_sub_0.32_mul_650/c_crop,h_650,w_2560/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/https://res.cloudinary.com/startup-grind/image/upload/c_fill%2Cdpr_2.0%2Cf_auto%2Cg_center%2Cq_auto:good/v1/gcs/platform-data-goog/chapter_banners/WhatsApp%2520Image%25202023-02-18%2520at%25206.25.19%2520PM.jpeg"
+              alt="GDG Prayagraj Network Banner"
+              width={1920}
+              height={488}
+              className="rounded-lg shadow-xl w-full h-[350px] object-cover"
+              priority
+            />
             <div className="absolute -z-10 top-0 right-0 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/10 rounded-full blur-3xl" />
             <div className="absolute -z-10 bottom-0 left-0 w-48 sm:w-72 h-48 sm:h-72 bg-green-500/10 rounded-full blur-3xl" />
           </div>
@@ -146,27 +110,47 @@ export default function Home() {
           </div>
 
           {/* About Section */}
-          <div className="mt-12 sm:mt-16 lg:mt-32 bg-gray-50 dark:bg-gray-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-12">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 lg:mb-6">About GDG Prayagraj</h2>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6 lg:mb-8">
-              We are a thriving engineering community, dedicated to fostering a network of inquisitive individuals. Our focus is on providing startups and enterprises with practical solutions to their technical challenges. Our community members are equipped with the skills necessary to effectively communicate their expertise, allowing us to collectively drive innovative and impactful solutions. Whether you are just starting out in your engineering journey or are an experienced professional, we believe that there is always more to learn, and we are passionate about supporting and empowering one another in this pursuit. Join us in building a strong and dynamic engineering community, dedicated to solving the most challenging technical problems.
-            </p>
-            <div className="flex flex-wrap items-center gap-4">
-              <a 
-                href="https://gdg.community.dev/gdg-prayagraj/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full hover:opacity-90 transition-opacity text-sm sm:text-base"
-              >
-                Meetup Page
-                <span className="text-lg sm:text-xl">→</span>
-              </a>
-              <a 
-                href="#"
-                className="text-sm sm:text-base text-blue-600 dark:text-blue-400 hover:underline"
-              >
-                Learn more about us
-              </a>
+          <div className="mt-12 sm:mt-16 lg:mt-32">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">About GDG Prayagraj</h2>
+            <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-12">
+              <div className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-6">
+                <p>
+                  Google Developers Group Prayagraj (GDG Prayagraj) is for developers who are interested in Google's developer technology; everything from the Android, App Engine, and Google Chrome platforms, to product APIs like the Maps API, YouTube API and Google Calendar API.
+                </p>
+
+                <p>
+                  We organize CodeLabs, tech talks, hackathons, Extended events, devFests, and study jams.
+                </p>
+
+                <p>
+                  The group is free to attend and open to all who are interested in discussing and learning more about software development with tools and technologies from Google or the open-source community.
+                </p>
+
+                <p>
+                  Want to be volunteer fill this form <a href="https://forms.gle/N3w6XxafVVtvWrPbA" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">https://forms.gle/N3w6XxafVVtvWrPbA</a>
+                </p>
+
+                <p>
+                  Join us on social <a href="https://linktr.ee/gdgprayagraj" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">https://linktr.ee/gdgprayagraj</a>
+                </p>
+              </div>
+              <div className="flex flex-wrap items-center gap-4 mt-6">
+                <a
+                  href="https://gdg.community.dev/gdg-prayagraj/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full hover:opacity-90 transition-opacity text-sm sm:text-base"
+                >
+                  Community Page
+                  <span className="text-lg sm:text-xl">→</span>
+                </a>
+                <a
+                  href="#"
+                  className="text-sm sm:text-base text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  Learn more about us
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -188,34 +172,34 @@ export default function Home() {
                   Stake out #GDG Prayagraj for the latest updates and news.
                 </p>
                 <div className="flex gap-2 sm:gap-3">
-                  <a 
+                  <a
                     href="https://www.linkedin.com/company/gdg-prayagraj"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white p-1.5 sm:p-2 rounded-md sm:rounded-lg hover:bg-gray-50 transition-colors"
                   >
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                   </a>
-                  <a 
+                  <a
                     href="https://www.instagram.com/gdgprayagraj"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white p-1.5 sm:p-2 rounded-md sm:rounded-lg hover:bg-gray-50 transition-colors"
                   >
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                     </svg>
                   </a>
-                  <a 
+                  <a
                     href="https://www.youtube.com/@gdgprayagraj"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white p-1.5 sm:p-2 rounded-md sm:rounded-lg hover:bg-gray-50 transition-colors"
                   >
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                      <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
                     </svg>
                   </a>
                 </div>
@@ -244,50 +228,50 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row justify-between items-center py-4 sm:py-6">
               <div className="flex items-center gap-2 mb-4 lg:mb-0 text-center lg:text-left">
                 <span className="font-medium text-xs sm:text-sm lg:text-base text-white">GDG Prayagraj</span>
-                <a 
-                  href="https://gdg.community.dev/gdg-prayagraj/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://gdg.community.dev/gdg-prayagraj/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-[10px] sm:text-xs lg:text-sm text-gray-400 italic hover:text-gray-300 transition-colors"
                 >
                   developed by GDG Prayagraj Team
                 </a>
               </div>
               <div className="flex flex-wrap justify-center lg:justify-end gap-3 sm:gap-4 lg:gap-8 text-[10px] sm:text-xs lg:text-sm">
-                <a 
-                  href="https://developers.google.com/community/gdg" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://developers.google.com/community/gdg"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   About GDG Program
                 </a>
-                <a 
-                  href="https://www.womentechmakers.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.womentechmakers.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   About WTM Program
                 </a>
-                <a 
-                  href="/faq" 
+                <a
+                  href="/faq"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   FAQ
                 </a>
-                <a 
-                  href="https://gdg.community.dev/gdg-prayagraj/code-of-conduct/" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://gdg.community.dev/gdg-prayagraj/code-of-conduct/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Code of conduct
                 </a>
-                <a 
-                  href="https://developers.google.com/community-guidelines" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://developers.google.com/community-guidelines"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Community Guidelines
