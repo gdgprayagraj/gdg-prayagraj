@@ -11,12 +11,21 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
 	title: "GDG Prayagraj",
 	description: "Google Developer Group Prayagraj Community Website",
+	icons: {
+		icon: [
+			{
+				url: '/favicon.svg',
+				type: 'image/svg+xml',
+			}
+		],
+		apple: '/favicon.svg',
+	},
 };
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={inter.className}>
+			<body className={`${inter.className}`} suppressHydrationWarning>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
@@ -30,13 +39,12 @@ export default function RootLayout({ children }) {
 								<div className="flex items-center gap-2">
 									<div className="flex items-center gap-1">
 										<Image
-											src="/devfest-logo.svg"
-											alt="DevFest Logo"
-											width={20}
-											height={20}
-											className="dark:invert sm:w-6 sm:h-6"
+											src="/gdg-logo-new.svg"
+											alt="GDG Prayagraj Logo"
+											width={240}
+											height={40}
+											className="dark:invert"
 										/>
-										<span className="font-semibold text-xs sm:text-sm">Google Developer Group</span>
 										<span className="hidden sm:inline-flex px-2 py-0.5 bg-[#E5E7EB] dark:bg-gray-700 rounded-full text-xs">
 											Prayagraj
 										</span>

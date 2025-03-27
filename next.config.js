@@ -4,6 +4,9 @@ const nextConfig = {
     // Skip ESLint during builds
     ignoreDuringBuilds: true,
   },
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
 }
 
 module.exports = nextConfig 

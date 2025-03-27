@@ -205,17 +205,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex items-center gap-2 sm:gap-3">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14">
+                <div className="w-32 h-8">
                   <Image
-                    src="/gdg-logo.svg"
+                    src="/gdg-logo-new.svg"
                     alt="GDG Logo"
-                    width={56}
-                    height={56}
-                    className="w-full h-full"
+                    width={120}
+                    height={20}
+                    className="w-full h-full dark:invert"
                   />
-                </div>
-                <div className="text-base sm:text-lg lg:text-xl font-medium">
-                  Google<br />Developer Groups
                 </div>
               </div>
             </div>
@@ -261,9 +258,7 @@ export default function Home() {
                   FAQ
                 </a>
                 <a
-                  href="https://gdg.community.dev/gdg-prayagraj/code-of-conduct/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/code-of-conduct"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Code of conduct
