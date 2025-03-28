@@ -1,12 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    // Skip ESLint during builds
-    ignoreDuringBuilds: true,
-  },
-  images: {
-    domains: ['res.cloudinary.com'],
-  },
-}
+	eslint: {
+		// Skip ESLint during builds
+		ignoreDuringBuilds: true,
+	},
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'res.cloudinary.com',
+				port: '',
+				pathname: '/**',
+			},
+		],
+	},
+};
 
-module.exports = nextConfig 
+module.exports = nextConfig;
