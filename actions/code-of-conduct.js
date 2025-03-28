@@ -96,7 +96,7 @@ async function saveToDatabase(name, email) {
 		// Save the document to the database
 		await result.save();
 
-		return { success: true, id: result.insertedId };
+		return { success: true, id: result._id };
 	} catch (error) {
 		console.error('Error saving to database:', error);
 		return { success: false, error: error.message };
