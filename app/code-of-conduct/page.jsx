@@ -8,6 +8,7 @@ export default function CodeOfConduct() {
 	const [errorMessage, setErrorMessage] = useState('');
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [showCheckboxAlert, setShowCheckboxAlert] = useState(false);
+	const [dbStorageStatus, setDbStorageStatus] = useState(null);
 
 	useEffect(() => {
 		// Check if there's a success message in localStorage when component mounts
@@ -46,10 +47,14 @@ export default function CodeOfConduct() {
 
 		setIsSubmitting(true);
 		setErrorMessage('');
+		setDbStorageStatus(null);
 
 		try {
 			const formData = new FormData(e.target);
 			const result = await submitCodeOfConduct(formData);
+
+			// Track database storage status
+			setDbStorageStatus(result.dbSuccess === true);
 
 			if (result.success) {
 				// Set the submission flag
@@ -355,6 +360,13 @@ export default function CodeOfConduct() {
 									Your form has been submitted successfully.
 									We've sent you a confirmation email.
 								</p>
+								{/* {dbStorageStatus !== null && (
+									<p className="text-sm mt-2">
+										{dbStorageStatus
+											? 'Your information has been securely stored in our database.'
+											: 'Note: There was an issue storing your information in our database, but your submission was received.'}
+									</p>
+								)} */}
 							</div>
 						)}
 
@@ -368,7 +380,7 @@ export default function CodeOfConduct() {
 						)}
 
 						{showCheckboxAlert && (
-							<div className="mb-6 p-6 bg-yellow-100 dark:bg-yellow-800 text-yellow-700 dark:text-yellow-100 rounded-lg text-center animate-bounce">
+							<div className="mb-6 p-6 bg-yellow-100 dark:bg-yellow-800 text-yellow-700 dark:text-yellow-100 rounded-lg text-center">
 								<p className="text-xl font-semibold mb-2">
 									Attention
 								</p>

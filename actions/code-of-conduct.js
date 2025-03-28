@@ -1,6 +1,8 @@
 'use server';
 
 import nodemailer from 'nodemailer';
+import connectToDB from '@/db';
+import CodeOfConductSubmission from '@/db/models/code-of-conduct-submission';
 
 // Admin email addresses
 const ADMIN_EMAILS = process.env.ADMIN_EMAILS
@@ -77,6 +79,30 @@ function getAdminEmailContent(name, email) {
   `;
 }
 
+// Save form submission to MongoDB
+async function saveToDatabase(name, email) {
+	try {
+		// Connect to the database
+		await connectToDB();
+
+		// Insert the document
+		const result = new CodeOfConductSubmission({
+			name,
+			email,
+			acceptedAt: new Date(),
+			createdAt: new Date(),
+		});
+
+		// Save the document to the database
+		await result.save();
+
+		return { success: true, id: result.insertedId };
+	} catch (error) {
+		console.error('Error saving to database:', error);
+		return { success: false, error: error.message };
+	}
+}
+
 // Main server action to handle form submission
 export async function submitCodeOfConduct(formData) {
 	try {
@@ -90,6 +116,13 @@ export async function submitCodeOfConduct(formData) {
 				success: false,
 				error: 'Please fill out all fields and accept the terms.',
 			};
+		}
+
+		// Save to MongoDB database
+		const dbResult = await saveToDatabase(name, email);
+		if (!dbResult.success) {
+			console.error('Failed to save to database:', dbResult.error);
+			// Continue with the process even if DB save fails - we'll log but not block the submission
 		}
 
 		// Send confirmation email to user
@@ -122,6 +155,7 @@ export async function submitCodeOfConduct(formData) {
 					? 'Failed to notify all administrators'
 					: null
 				: userEmailResult.error,
+			dbSuccess: dbResult.success,
 		};
 	} catch (error) {
 		console.error('Error in submitCodeOfConduct:', error);
