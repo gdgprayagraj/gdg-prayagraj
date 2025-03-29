@@ -447,7 +447,11 @@ export default function CodeOfConduct() {
 							</div>
 
 							<div className="flex justify-center mt-6">
-								<Button type="submit" disabled={isSubmitting}>
+								<Button
+									type="submit"
+									disabled={isSubmitting}
+									className="bg-blue-600 hover:bg-blue-700 text-white font-bold"
+								>
 									{isSubmitting ? 'SUBMITTING...' : 'SUBMIT'}
 								</Button>
 							</div>
