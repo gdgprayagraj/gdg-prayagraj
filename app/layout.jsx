@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { ModeToggle } from "@/components/toggle-theme";
 import { MobileNav } from "@/components/MobileNav";
@@ -6,7 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Link from "next/link";
 import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin"] });
+const openSans = Open_Sans({ subsets: ["latin"] });
 
 export const metadata = {
 	title: "GDG Prayagraj",
@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={`${inter.className}`} suppressHydrationWarning>
+			<body className={`${openSans.className}`} suppressHydrationWarning>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
