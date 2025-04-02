@@ -62,8 +62,15 @@ export default function RootLayout({ children }) {
 									>
 										Devfest
 									</a>
-									<Link href="/speakers" className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors">Speakers</Link>
-									<Link href="/badge" className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors">Badge</Link>
+									<a 
+										href="https://eventphotos.netlify.app/" 
+										target="_blank" 
+										rel="noopener noreferrer" 
+										className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors"
+									>
+										Albums
+									</a>
+									<Link href="/blogs" className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors">Blogs</Link>
 									<Link href="/team" className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors">Team</Link>
 									<Link href="/faq" className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors">FAQ</Link>
 									<ModeToggle />

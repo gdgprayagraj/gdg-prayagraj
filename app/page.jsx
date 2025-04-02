@@ -204,10 +204,10 @@ export default function Home() {
           <div className="flex justify-center mt-12">
             <Link
               href="/tools"
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
+              className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
             >
-              <span className="text-lg font-medium">View All Tools</span>
-              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span className="text-base font-medium">View All Tools</span>
+              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
@@ -271,7 +271,7 @@ export default function Home() {
         <div className="mt-16 sm:mt-20 lg:mt-32">
           <div className="max-w-3xl">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
-              Our Blogs
+              Posted Blogs
             </h2>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-8 lg:mb-16">
               Explore our latest articles, tutorials, and insights from the GDG Prayagraj community.
@@ -279,21 +279,21 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 lg:mt-16">
-            <a href="https://medium.com/gdg-prayagraj/getting-started-with-flutter-development" target="_blank" rel="noopener noreferrer" 
+            <a href="https://medium.com/@adityakumar2019.ak/my-journey-road-to-wiki-wikiclub-tech-india-2d1a19dab521" target="_blank" rel="noopener noreferrer" 
               className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
-                  <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">📱</div>
+                  <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">📝</div>
                 </div>
                 <span className="text-xs font-medium text-blue-600 dark:text-blue-400 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-full">
-                  Mobile Development
+                  Community
                 </span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                Getting Started with Flutter Development
+                My Journey: Road to Wiki - WikiClub Tech India
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
-                A comprehensive guide to begin your journey with Flutter and build beautiful cross-platform applications.
+                A personal journey through the WikiClub Tech India program and its impact on technical documentation.
               </p>
               <div className="flex items-center justify-between">
                 <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
@@ -302,52 +302,25 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
-                <span className="text-xs text-gray-500 dark:text-gray-400">5 min read</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">8 min read</span>
               </div>
             </a>
 
-            <a href="https://medium.com/gdg-prayagraj/mastering-google-cloud-platform" target="_blank" rel="noopener noreferrer"
+            <a href="https://medium.com/@adityakumar2019.ak/my-first-devfest-a-volunteers-experience-at-devfest-2023-prayagraj-232035102743" target="_blank" rel="noopener noreferrer"
               className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
-                  <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">☁️</div>
+                  <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">🎯</div>
                 </div>
                 <span className="text-xs font-medium text-blue-600 dark:text-blue-400 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-full">
-                  Cloud Computing
+                  Event Experience
                 </span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                Mastering Google Cloud Platform
+                My First DevFest: A Volunteer's Experience
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
-                Deep dive into GCP services and learn how to build scalable cloud solutions with best practices and real-world examples.
-              </p>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
-                  Read Article
-                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-                <span className="text-xs text-gray-500 dark:text-gray-400">7 min read</span>
-              </div>
-            </a>
-
-            <a href="https://medium.com/gdg-prayagraj/web-development-best-practices" target="_blank" rel="noopener noreferrer"
-              className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
-                  <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">💻</div>
-                </div>
-                <span className="text-xs font-medium text-blue-600 dark:text-blue-400 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-full">
-                  Web Development
-                </span>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                Web Development Best Practices
-              </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
-                Essential tips and tricks for modern web development using the latest technologies and frameworks.
+                Personal insights and experiences from volunteering at DevFest 2023 Prayagraj.
               </p>
               <div className="flex items-center justify-between">
                 <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
@@ -359,15 +332,140 @@ export default function Home() {
                 <span className="text-xs text-gray-500 dark:text-gray-400">6 min read</span>
               </div>
             </a>
+
+            <a href="https://medium.com/@info2ankitkumarverma/getting-started-with-tensorflow-a-guide-for-beginners-591287bfeb52" target="_blank" rel="noopener noreferrer"
+              className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
+                  <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">🤖</div>
+                </div>
+                <span className="text-xs font-medium text-blue-600 dark:text-blue-400 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-full">
+                  Machine Learning
+                </span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                Getting Started with TensorFlow
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
+                A comprehensive guide for beginners to start their journey with TensorFlow.
+              </p>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
+                  Read Article
+                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <span className="text-xs text-gray-500 dark:text-gray-400">10 min read</span>
+              </div>
+            </a>
           </div>
 
           <div className="flex justify-center mt-12">
             <Link
               href="/blogs"
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
+              className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
             >
-              <span className="text-lg font-medium">View All Articles</span>
-              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <span className="text-base font-medium">View All Articles</span>
+              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+
+        {/* Past Events Section */}
+        <div className="mt-16 sm:mt-20 lg:mt-32">
+          <div className="max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
+              Past Events
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-8 lg:mb-16">
+              Explore our previous events and join us in upcoming ones to be part of the vibrant GDG Prayagraj community.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+            <div className="group flex flex-col items-center text-center">
+              <div className="relative w-32 h-32 sm:w-44 sm:h-44 rounded-full overflow-hidden mb-3 bg-white dark:bg-[#111827]/80 hover:shadow-lg transition-all duration-300">
+                <Image
+                  src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/BWAI25-EventThumb-01_k2vs7Fr.png"
+                  alt="Build With AI 2025"
+                  width={400}
+                  height={400}
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="text-xs text-gray-500 dark:text-gray-400 mb-1">26 Mar 2025</span>
+                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">Workshop / Study Group</span>
+                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Build With AI- Prayagraj</h3>
+                <p className="text-xs text-gray-600 dark:text-gray-300">GDG Prayagraj</p>
+              </div>
+            </div>
+
+            <div className="group flex flex-col items-center text-center">
+              <div className="relative w-32 h-32 sm:w-44 sm:h-44 rounded-full overflow-hidden mb-3 bg-white dark:bg-[#111827]/80 hover:shadow-lg transition-all duration-300">
+                <Image
+                  src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/Copy%20of%20DF24-Organizer-badge_uFOn2iL.png"
+                  alt="DevFest 2024"
+                  width={400}
+                  height={400}
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="text-xs text-gray-500 dark:text-gray-400 mb-1">26 Oct 2024</span>
+                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">External Ticketing</span>
+                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Devfest Prayagraj 2024</h3>
+                <p className="text-xs text-gray-600 dark:text-gray-300">GDG Prayagraj</p>
+              </div>
+            </div>
+
+            <div className="group flex flex-col items-center text-center">
+              <div className="relative w-32 h-32 sm:w-44 sm:h-44 rounded-full overflow-hidden mb-3 bg-white dark:bg-[#111827]/80 hover:shadow-lg transition-all duration-300">
+                <Image
+                  src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/Copy%20of%20IO%20extended%202024%20Bevy%20thumbnail%20with%20editable%20location_bsNVpeV.png"
+                  alt="Google I/O Extended"
+                  width={400}
+                  height={400}
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="text-xs text-gray-500 dark:text-gray-400 mb-1">29 Jun 2024</span>
+                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">Speaker Session / Tech Talk</span>
+                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Google I/O Extended Prayagraj</h3>
+                <p className="text-xs text-gray-600 dark:text-gray-300">GDG Prayagraj</p>
+              </div>
+            </div>
+
+            <div className="group flex flex-col items-center text-center">
+              <div className="relative w-32 h-32 sm:w-44 sm:h-44 rounded-full overflow-hidden mb-3 bg-white dark:bg-[#111827]/80 hover:shadow-lg transition-all duration-300">
+                <Image
+                  src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/GDG24-BwAI-Bevy-EventThumb-Blue%20%282%29_flFteli.png"
+                  alt="Build with AI - Startup Show"
+                  width={400}
+                  height={400}
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex flex-col items-center">
+                <span className="text-xs text-gray-500 dark:text-gray-400 mb-1">8 May 2024</span>
+                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">Hackathon</span>
+                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Build with AI - Startup Show</h3>
+                <p className="text-xs text-gray-600 dark:text-gray-300">GDG Prayagraj</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-8">
+            <Link
+              href="/events"
+              className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
+            >
+              <span className="text-base font-medium">View All Events</span>
+              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
