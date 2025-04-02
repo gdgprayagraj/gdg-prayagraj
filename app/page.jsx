@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import YoutubeEmbed from "@/components/YoutubeEmbed";
 
 export default function Home() {
   return (
@@ -11,11 +12,11 @@ export default function Home() {
           <div>
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold transition-transform hover:scale-[1.02] duration-300 drop-shadow-sm">
               <div className="mb-4 animate-rainbow">
-                Google Developer<br />Group
+                Google Developer
+                <br />
+                Group
               </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl animate-rainbow">
-                Prayagraj
-              </div>
+              <div className="text-3xl sm:text-4xl lg:text-5xl animate-rainbow">Prayagraj</div>
             </h1>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mt-6 mb-6 lg:mb-8 transition-colors duration-300">
               Experience DevFest Prayagraj 2024 - where innovation meets the rich heritage of Prayagraj. Join us as we
@@ -352,14 +353,7 @@ export default function Home() {
                 <div className="relative max-w-2xl mx-auto">
                   <div className="absolute -inset-3 border-4 border-[#34A853] rounded-3xl transform rotate-1"></div>
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white dark:bg-gray-800 shadow-2xl">
-                    <iframe
-                      src="https://www.youtube.com/embed/31A3MloRD8w"
-                      title="Experience GDG Prayagraj"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="w-full h-full"
-                      style={{ aspectRatio: "4/3" }}
-                    ></iframe>
+                    <YoutubeEmbed videoId="31A3MloRD8w" />
                   </div>
                 </div>
               </div>
