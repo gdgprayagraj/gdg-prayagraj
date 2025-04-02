@@ -14,21 +14,38 @@ export default async function UserList() {
 
   return (
     <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
-      <h1 className="text-2xl font-bold mb-4">Code of Conduct Acceptance List</h1>
+      <h1 className="text-2xl font-bold mb-6">Code of Conduct Acceptance List</h1>
 
       {users.length === 0 ? (
         <p className="text-gray-500">No users have signed up yet.</p>
       ) : (
-        <div className="grid gap-4">
-          {users.map((user, index) => (
-            <div key={user._id} className="bg-white p-4 rounded-lg shadow flex flex-row gap-2 items-center">
-              <h3 className="font-semibold">
-                {index + 1}. {user.name}
-              </h3>
-              <p className="text-gray-600">({user.email})</p>
-              <p className="text-sm text-gray-400">Accepted on: {new Date(user.acceptedAt).toLocaleString()}</p>
-            </div>
-          ))}
+        <div className="overflow-x-auto">
+          <table className="min-w-full bg-white rounded-lg overflow-hidden shadow">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">#</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Email
+                </th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Accepted On
+                </th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {users.map((user, index) => (
+                <tr key={user._id} className="hover:bg-gray-50">
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{index + 1}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{user.name}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{user.email}</td>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    {new Date(user.acceptedAt).toLocaleString()}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       )}
     </div>
