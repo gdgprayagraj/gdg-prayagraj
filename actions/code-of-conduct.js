@@ -29,6 +29,7 @@ async function sendEmail(to, subject, html) {
 			to,
 			subject,
 			html,
+			replyTo: process.env.REPLY_TO,
 		});
 		return { success: true };
 	} catch (error) {
