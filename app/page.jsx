@@ -4,8 +4,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gradient-to-b dark:from-[#0B1120] dark:to-[#0A0F1C]">
-      {/* Hero Section */}
-      <main className="container mx-auto px-4 py-6 sm:py-8 lg:py-12">
+      {/* Main container with consistent max-width and padding */}
+      <main className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
+        {/* Hero Section */}
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
           <div>
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold transition-transform hover:scale-[1.02] duration-300 drop-shadow-sm text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
@@ -41,7 +42,7 @@ export default function Home() {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-8 mt-12 sm:mt-16 lg:mt-24">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-8 mt-16 sm:mt-20 lg:mt-24">
           <div className="p-3 sm:p-4 lg:p-6 rounded-lg bg-blue-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm">
             <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">20+</h3>
             <p className="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-300">Speaker Engagements</p>
@@ -61,7 +62,7 @@ export default function Home() {
         </div>
 
         {/* What we do Section */}
-        <div className="mt-12 sm:mt-16 lg:mt-32">
+        <div className="mt-16 sm:mt-20 lg:mt-32">
           <div className="max-w-3xl">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
               What we do?
@@ -72,8 +73,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {/* Cards remain the same */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8 lg:mt-16">
             <div className="bg-gray-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 hover:shadow-lg transition-shadow">
               <div className="text-gray-600 dark:text-gray-300 mb-4 text-2xl sm:text-3xl">💬</div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
@@ -114,153 +114,143 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
 
-          {/* Developer Tools Section */}
-          <div className="mt-12 sm:mt-16 lg:mt-32">
-            <div className="max-w-3xl">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
-                Start Building Today
-              </h2>
-              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-8 lg:mb-16">
-                Explore Google's developer tools and start building amazing applications with the latest technologies.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-              {/* Android */}
-              <a href="https://developer.android.com" target="_blank" rel="noopener noreferrer"
-                className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
-                <div className="flex flex-col items-center text-center">
-                  <img src="https://developers.google.com/static/site-assets/images/products/android-logo.png" alt="Android" className="w-16 h-16 mb-4" />
-                  <h3 className="text-base font-medium text-gray-900 dark:text-white">Android</h3>
-                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Modern tools to help you build experiences that people love across every Android device.</p>
-                </div>
-              </a>
-
-              {/* Google Cloud */}
-              <a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer"
-                className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
-                <div className="flex flex-col items-center text-center">
-                  <img src="https://www.gstatic.com/images/branding/product/2x/google_cloud_64dp.png" alt="Google Cloud" className="w-16 h-16 mb-4" />
-                  <h3 className="text-base font-medium text-gray-900 dark:text-white">Google Cloud</h3>
-                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">New customers get $300 in free credits to deploy a dynamic website, launch a VM, build a three-tier web app, and more.</p>
-                </div>
-              </a>
-
-              {/* Google AI Studio */}
-              <a href="https://ai.google.dev/" target="_blank" rel="noopener noreferrer"
-                className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
-                <div className="flex flex-col items-center text-center">
-                  <img src="https://developers.google.com/static/focus/images/ai-studio-icon.png" alt="Google AI Studio" className="w-16 h-16 mb-4" />
-                  <h3 className="text-base font-medium text-gray-900 dark:text-white">Google AI Studio</h3>
-                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Build generative AI applications quickly with Gemini in Google AI Studio.</p>
-                </div>
-              </a>
-
-              {/* Gemini API */}
-              <a href="https://ai.google.dev/docs" target="_blank" rel="noopener noreferrer"
-                className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
-                <div className="flex flex-col items-center text-center">
-                  <img src="https://developers.google.com/static/focus/images/gemini-icon.png" alt="Gemini API" className="w-16 h-16 mb-4" />
-                  <h3 className="text-base font-medium text-gray-900 dark:text-white">Gemini API</h3>
-                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Build and deploy production ready generative AI experiences, enhanced by Gemini models. Get started for free!</p>
-                </div>
-              </a>
-
-              {/* Chrome OS */}
-              <a href="https://chromeos.dev" target="_blank" rel="noopener noreferrer"
-                className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
-                <div className="flex flex-col items-center text-center">
-                  <img src="https://developers.google.com/static/homepage-assets/images/chromeos-logo.svg" alt="Chrome OS" className="w-16 h-16 mb-4" />
-                  <h3 className="text-base font-medium text-gray-900 dark:text-white">Chrome OS</h3>
-                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Modern tools and features that help you build high-quality web experiences.</p>
-                </div>
-              </a>
-
-              {/* Google Play */}
-              <a href="https://play.google.com/console" target="_blank" rel="noopener noreferrer"
-                className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
-                <div className="flex flex-col items-center text-center">
-                  <img src="https://www.gstatic.com/images/branding/product/2x/play_prism_64dp.png" alt="Google Play" className="w-16 h-16 mb-4" />
-                  <h3 className="text-base font-medium text-gray-900 dark:text-white">Google Play</h3>
-                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Grow your business, improve app quality, engage your audience, and earn revenue.</p>
-                </div>
-              </a>
-
-              {/* Firebase */}
-              <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer"
-                className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
-                <div className="flex flex-col items-center text-center">
-                  <img src="https://www.gstatic.com/devrel-devsite/prod/v7b55e5943f9ab80a0423ff6653c19f56a0e5266641f85a6a76aee662b0157d18/firebase/images/icon.svg" alt="Firebase" className="w-16 h-16 mb-4" />
-                  <h3 className="text-base font-medium text-gray-900 dark:text-white">Firebase</h3>
-                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Build, improve, and grow your app with Firebase.</p>
-                </div>
-              </a>
-
-              {/* TensorFlow */}
-              <a href="https://tensorflow.org" target="_blank" rel="noopener noreferrer"
-                className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
-                <div className="flex flex-col items-center text-center">
-                  <img src="https://developers.google.com/static/site-assets/images/products/tensorflow-logo-196.png" alt="TensorFlow" className="w-16 h-16 mb-4" />
-                  <h3 className="text-base font-medium text-gray-900 dark:text-white">TensorFlow</h3>
-                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">An end-to-end platform for machine learning.</p>
-                </div>
-              </a>
-            </div>
-
-            <div className="flex justify-center mt-12">
-              <Link
-                href="/tools"
-                className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
-              >
-                <span className="text-lg font-medium">View All Tools</span>
-                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
+        {/* Developer Tools Section */}
+        <div className="mt-16 sm:mt-20 lg:mt-32">
+          <div className="max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
+              Start Building Today
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-8 lg:mb-16">
+              Explore Google's developer tools and start building amazing applications with the latest technologies.
+            </p>
           </div>
 
-          {/* Become a Leader Section */}
-          <div className="mt-12 sm:mt-16 lg:mt-32 bg-gray-50/50 dark:bg-[#111827]/30 rounded-3xl p-8 lg:p-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 lg:mt-16">
+            <a href="https://developer.android.com" target="_blank" rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+              <div className="flex flex-col items-center text-center">
+                <img src="https://developers.google.com/static/site-assets/images/products/android-logo.png" alt="Android" className="w-16 h-16 mb-4" />
+                <h3 className="text-base font-medium text-gray-900 dark:text-white">Android</h3>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Modern tools to help you build experiences that people love across every Android device.</p>
+              </div>
+            </a>
+
+            <a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+              <div className="flex flex-col items-center text-center">
+                <img src="https://www.gstatic.com/images/branding/product/2x/google_cloud_64dp.png" alt="Google Cloud" className="w-16 h-16 mb-4" />
+                <h3 className="text-base font-medium text-gray-900 dark:text-white">Google Cloud</h3>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">New customers get $300 in free credits to deploy a dynamic website, launch a VM, build a three-tier web app, and more.</p>
+              </div>
+            </a>
+
+            <a href="https://ai.google.dev/" target="_blank" rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+              <div className="flex flex-col items-center text-center">
+                <img src="https://developers.google.com/static/focus/images/ai-studio-icon.png" alt="Google AI Studio" className="w-16 h-16 mb-4" />
+                <h3 className="text-base font-medium text-gray-900 dark:text-white">Google AI Studio</h3>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Build generative AI applications quickly with Gemini in Google AI Studio.</p>
+              </div>
+            </a>
+
+            <a href="https://ai.google.dev/docs" target="_blank" rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+              <div className="flex flex-col items-center text-center">
+                <img src="https://developers.google.com/static/focus/images/gemini-icon.png" alt="Gemini API" className="w-16 h-16 mb-4" />
+                <h3 className="text-base font-medium text-gray-900 dark:text-white">Gemini API</h3>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Build and deploy production ready generative AI experiences, enhanced by Gemini models. Get started for free!</p>
+              </div>
+            </a>
+
+            <a href="https://chromeos.dev" target="_blank" rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+              <div className="flex flex-col items-center text-center">
+                <img src="https://developers.google.com/static/homepage-assets/images/chromeos-logo.svg" alt="Chrome OS" className="w-16 h-16 mb-4" />
+                <h3 className="text-base font-medium text-gray-900 dark:text-white">Chrome OS</h3>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Modern tools and features that help you build high-quality web experiences.</p>
+              </div>
+            </a>
+
+            <a href="https://play.google.com/console" target="_blank" rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+              <div className="flex flex-col items-center text-center">
+                <img src="https://www.gstatic.com/images/branding/product/2x/play_prism_64dp.png" alt="Google Play" className="w-16 h-16 mb-4" />
+                <h3 className="text-base font-medium text-gray-900 dark:text-white">Google Play</h3>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Grow your business, improve app quality, engage your audience, and earn revenue.</p>
+              </div>
+            </a>
+
+            <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+              <div className="flex flex-col items-center text-center">
+                <img src="https://www.gstatic.com/devrel-devsite/prod/v7b55e5943f9ab80a0423ff6653c19f56a0e5266641f85a6a76aee662b0157d18/firebase/images/icon.svg" alt="Firebase" className="w-16 h-16 mb-4" />
+                <h3 className="text-base font-medium text-gray-900 dark:text-white">Firebase</h3>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Build, improve, and grow your app with Firebase.</p>
+              </div>
+            </a>
+
+            <a href="https://tensorflow.org" target="_blank" rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+              <div className="flex flex-col items-center text-center">
+                <img src="https://developers.google.com/static/site-assets/images/products/tensorflow-logo-196.png" alt="TensorFlow" className="w-16 h-16 mb-4" />
+                <h3 className="text-base font-medium text-gray-900 dark:text-white">TensorFlow</h3>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">An end-to-end platform for machine learning.</p>
+              </div>
+            </a>
+          </div>
+
+          <div className="flex justify-center mt-12">
+            <Link
+              href="/tools"
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
+            >
+              <span className="text-lg font-medium">View All Tools</span>
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+
+        {/* Become a Leader Section */}
+        <div className="mt-16 sm:mt-20 lg:mt-32">
+          <div className="max-w-3xl mb-8">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
+              Become a leader in your local developer community
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
+              Lead a Google Developer Group (GDG) and empower your local developer community. Before you start, check the GDG Chapter Directory to see if a chapter already exists in your city or on your campus.
+            </p>
+          </div>
+
+          <div className="bg-gray-50/50 dark:bg-[#111827]/30 rounded-3xl p-6 sm:p-8 lg:p-12">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-              <div className="order-2 lg:order-1 max-w-xl">
-                <div className="flex items-start gap-6 mb-8">
-                  <div className="text-4xl"></div>
-                  <div>
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
-                      Become a leader in your local developer community
-                    </h2>
-                    <div className="text-base sm:text-lg text-gray-600 dark:text-gray-300 space-y-4">
-                      <p>
-                        Lead a Google Developer Group (GDG) and empower your local developer community. Before you start, check the GDG Chapter Directory to see if a chapter already exists in your city or on your campus.
-                      </p>
-                      <p>
-                        If one does, reach out to the organizers through the chapter page and get involved. If there isn't a GDG near you, apply to start one!
-                      </p>
-                      <p>
-                        Leading a GDG allows you to develop leadership skills, gain recognition, expand your network and collaborate with other passionate developers. You'll create a welcoming space for learning and growth, make a positive impact on the tech world, and access valuable resources.
-                      </p>
-                      <div className="pt-6">
-                        <a
-                          href="https://docs.google.com/forms/d/e/1FAIpQLSdQk87g7fElElcZFZZKRWlP-i0k9gFCxRuFjvwAgObZndO75A/viewform"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-6 py-3 bg-[#1a73e8] hover:bg-[#1557b0] text-white rounded-lg transition-all duration-300 text-sm font-medium"
-                        >
-                          Lead a GDG
-                        </a>
-                      </div>
-                    </div>
+              <div className="order-2 lg:order-1">
+                <div className="space-y-4">
+                  <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
+                    If one does, reach out to the organizers through the chapter page and get involved. If there isn't a GDG near you, apply to start one!
+                  </p>
+                  <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
+                    Leading a GDG allows you to develop leadership skills, gain recognition, expand your network and collaborate with other passionate developers. You'll create a welcoming space for learning and growth, make a positive impact on the tech world, and access valuable resources.
+                  </p>
+                  <div className="pt-6">
+                    <a
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSdQk87g7fElElcZFZZKRWlP-i0k9gFCxRuFjvwAgObZndO75A/viewform"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-[#1a73e8] hover:bg-[#1557b0] text-white rounded-lg transition-all duration-300 text-sm font-medium"
+                    >
+                      Show Interest | For Volunteering
+                    </a>
                   </div>
                 </div>
               </div>
 
               <div className="order-1 lg:order-2">
                 <div className="relative max-w-2xl mx-auto">
-                  {/* Green border accent */}
                   <div className="absolute -inset-3 border-4 border-[#34A853] rounded-3xl transform rotate-1"></div>
-                  {/* Video container */}
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white dark:bg-gray-800 shadow-2xl">
                     <iframe
                       src="https://www.youtube.com/embed/31A3MloRD8w"
@@ -275,170 +265,166 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Our Blogs Section */}
-          <div className="mt-12 sm:mt-16 lg:mt-32">
-            <div className="max-w-3xl">
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
-                Our Blogs
-              </h2>
-              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-8 lg:mb-16">
-                Explore our latest articles, tutorials, and insights from the GDG Prayagraj community.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Blog Card 1 */}
-              <a href="https://medium.com/gdg-prayagraj/getting-started-with-flutter-development" target="_blank" rel="noopener noreferrer" 
-                className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
-                    <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">📱</div>
-                  </div>
-                  <span className="text-xs font-medium text-blue-600 dark:text-blue-400 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-full">
-                    Mobile Development
-                  </span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  Getting Started with Flutter Development
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
-                  A comprehensive guide to begin your journey with Flutter and build beautiful cross-platform applications.
-                </p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
-                    Read Article
-                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">5 min read</span>
-                </div>
-              </a>
-
-              {/* Blog Card 2 */}
-              <a href="https://medium.com/gdg-prayagraj/mastering-google-cloud-platform" target="_blank" rel="noopener noreferrer"
-                className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
-                    <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">☁️</div>
-                  </div>
-                  <span className="text-xs font-medium text-blue-600 dark:text-blue-400 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-full">
-                    Cloud Computing
-                  </span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  Mastering Google Cloud Platform
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
-                  Deep dive into GCP services and learn how to build scalable cloud solutions with best practices and real-world examples.
-                </p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
-                    Read Article
-                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">7 min read</span>
-                </div>
-              </a>
-
-              {/* Blog Card 3 */}
-              <a href="https://medium.com/gdg-prayagraj/web-development-best-practices" target="_blank" rel="noopener noreferrer"
-                className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
-                    <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">💻</div>
-                  </div>
-                  <span className="text-xs font-medium text-blue-600 dark:text-blue-400 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-full">
-                    Web Development
-                  </span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                  Web Development Best Practices
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
-                  Essential tips and tricks for modern web development using the latest technologies and frameworks.
-                </p>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
-                    Read Article
-                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">6 min read</span>
-                </div>
-              </a>
-            </div>
-
-            <div className="flex justify-center mt-12">
-              <Link
-                href="/blogs"
-                className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
-              >
-                <span className="text-lg font-medium">View All Articles</span>
-                <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </Link>
-            </div>
+        {/* Our Blogs Section */}
+        <div className="mt-16 sm:mt-20 lg:mt-32">
+          <div className="max-w-3xl">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
+              Our Blogs
+            </h2>
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-8 lg:mb-16">
+              Explore our latest articles, tutorials, and insights from the GDG Prayagraj community.
+            </p>
           </div>
 
-          {/* About Section */}
-          <div className="mt-12 sm:mt-16 lg:mt-32">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
-              About GDG Prayagraj
-            </h2>
-            <div className="bg-gray-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-12">
-              <div className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-6">
-                <p>
-                  Google Developers Group Prayagraj (GDG Prayagraj) is for developers who are interested in Google's developer technology; everything from the Android, App Engine, and Google Chrome platforms, to product APIs like the Maps API, YouTube API and Google Calendar API.
-                </p>
-
-                <p>
-                  We organize CodeLabs, tech talks, hackathons, Extended events, devFests, and study jams.
-                </p>
-
-                <p>
-                  The group is free to attend and open to all who are interested in discussing and learning more about software development with tools and technologies from Google or the open-source community.
-                </p>
-
-                <p>
-                  Want to be volunteer fill this form <a href="https://forms.gle/N3w6XxafVVtvWrPbA" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">https://forms.gle/N3w6XxafVVtvWrPbA</a>
-                </p>
-
-                <p>
-                  Join us on social <a href="https://linktr.ee/gdgprayagraj" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">https://linktr.ee/gdgprayagraj</a>
-                </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 lg:mt-16">
+            <a href="https://medium.com/gdg-prayagraj/getting-started-with-flutter-development" target="_blank" rel="noopener noreferrer" 
+              className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
+                  <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">📱</div>
+                </div>
+                <span className="text-xs font-medium text-blue-600 dark:text-blue-400 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-full">
+                  Mobile Development
+                </span>
               </div>
-              <div className="flex flex-wrap items-center gap-4 mt-6">
-                <a
-                  href="https://gdg.community.dev/gdg-prayagraj/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full hover:opacity-90 transition-all duration-200 shadow-md hover:shadow-lg dark:shadow-lg dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50"
-                >
-                  Community Page
-                  <span className="text-lg sm:text-xl">→</span>
-                </a>
-                <a
-                  href="#"
-                  className="text-sm sm:text-base text-blue-600 dark:text-blue-400 hover:underline"
-                >
-                  Learn more about us
-                </a>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                Getting Started with Flutter Development
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
+                A comprehensive guide to begin your journey with Flutter and build beautiful cross-platform applications.
+              </p>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
+                  Read Article
+                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <span className="text-xs text-gray-500 dark:text-gray-400">5 min read</span>
               </div>
+            </a>
+
+            <a href="https://medium.com/gdg-prayagraj/mastering-google-cloud-platform" target="_blank" rel="noopener noreferrer"
+              className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
+                  <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">☁️</div>
+                </div>
+                <span className="text-xs font-medium text-blue-600 dark:text-blue-400 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-full">
+                  Cloud Computing
+                </span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                Mastering Google Cloud Platform
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
+                Deep dive into GCP services and learn how to build scalable cloud solutions with best practices and real-world examples.
+              </p>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
+                  Read Article
+                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <span className="text-xs text-gray-500 dark:text-gray-400">7 min read</span>
+              </div>
+            </a>
+
+            <a href="https://medium.com/gdg-prayagraj/web-development-best-practices" target="_blank" rel="noopener noreferrer"
+              className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
+                  <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">💻</div>
+                </div>
+                <span className="text-xs font-medium text-blue-600 dark:text-blue-400 px-3 py-1 bg-blue-50 dark:bg-blue-900/30 rounded-full">
+                  Web Development
+                </span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                Web Development Best Practices
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
+                Essential tips and tricks for modern web development using the latest technologies and frameworks.
+              </p>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
+                  Read Article
+                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <span className="text-xs text-gray-500 dark:text-gray-400">6 min read</span>
+              </div>
+            </a>
+          </div>
+
+          <div className="flex justify-center mt-12">
+            <Link
+              href="/blogs"
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
+            >
+              <span className="text-lg font-medium">View All Articles</span>
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+
+        {/* About Section */}
+        <div className="mt-16 sm:mt-20 lg:mt-32">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
+            About GDG Prayagraj
+          </h2>
+          <div className="bg-gray-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-12">
+            <div className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-6">
+              <p>
+                Google Developers Group Prayagraj (GDG Prayagraj) is for developers who are interested in Google's developer technology; everything from the Android, App Engine, and Google Chrome platforms, to product APIs like the Maps API, YouTube API and Google Calendar API.
+              </p>
+
+              <p>
+                We organize CodeLabs, tech talks, hackathons, Extended events, devFests, and study jams.
+              </p>
+
+              <p>
+                The group is free to attend and open to all who are interested in discussing and learning more about software development with tools and technologies from Google or the open-source community.
+              </p>
+
+              <p>
+                Want to be volunteer fill this form <a href="https://forms.gle/N3w6XxafVVtvWrPbA" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">https://forms.gle/N3w6XxafVVtvWrPbA</a>
+              </p>
+
+              <p>
+                Join us on social <a href="https://linktr.ee/gdgprayagraj" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">https://linktr.ee/gdgprayagraj</a>
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-4 mt-6">
+              <a
+                href="https://gdg.community.dev/gdg-prayagraj/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full hover:opacity-90 transition-all duration-200 shadow-md hover:shadow-lg dark:shadow-lg dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50"
+              >
+                Community Page
+                <span className="text-lg sm:text-xl">→</span>
+              </a>
+              <a
+                href="#"
+                className="text-sm sm:text-base text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                Learn more about us
+              </a>
             </div>
           </div>
         </div>
       </main>
 
       {/* Footer */}
-      <footer className="mt-12 sm:mt-16 lg:mt-32">
-        {/* Keep in touch section */}
-        <div className="container mx-auto max-w-7xl px-4">
+      <footer className="mt-16 sm:mt-20 lg:mt-32">
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="bg-[#E1F4F7] dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-2xl sm:rounded-3xl lg:rounded-[32px] p-4 sm:p-6 lg:p-12">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8">
               <div>
@@ -498,9 +484,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Bottom footer */}
         <div className="bg-[#202124] mt-8 lg:mt-16">
-          <div className="container mx-auto max-w-7xl px-4">
+          <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row justify-between items-center py-4 sm:py-6">
               <div className="flex items-center gap-2 mb-4 lg:mb-0 text-center lg:text-left">
                 <span className="font-medium text-xs sm:text-sm lg:text-base text-white">GDG Prayagraj</span>

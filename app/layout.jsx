@@ -54,7 +54,14 @@ export default function RootLayout({ children }) {
 								{/* Desktop Navigation */}
 								<div className="hidden lg:flex items-center gap-8">
 									<Link href="/" className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors">Home</Link>
-									<Link href="/agenda" className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors">Agenda</Link>
+									<a 
+										href="https://devfest.gdgprayagraj.com/" 
+										target="_blank" 
+										rel="noopener noreferrer" 
+										className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors"
+									>
+										Devfest
+									</a>
 									<Link href="/speakers" className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors">Speakers</Link>
 									<Link href="/badge" className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors">Badge</Link>
 									<Link href="/team" className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors">Team</Link>
