@@ -290,22 +290,22 @@ export default function TeamPage() {
           {VolunteerTeam.map((volunteer, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-lg p-4 text-center shadow hover:shadow-md transition-shadow"
+              className="bg-white dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-all duration-300"
             >
               {volunteer.imageUrl && (
                 <Image
                   src={volunteer.imageUrl}
                   alt={volunteer.name}
-                  width={100}
-                  height={100}
-                  className="w-16 h-16 mx-auto mb-3 rounded-full"
-                  quality={50}
+                  width={120}
+                  height={120}
+                  className="w-24 h-24 mx-auto mb-4 rounded-lg object-cover"
+                  quality={80}
                 />
               )}
-              <h3 className="font-medium text-sm mb-1 text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
+              <h3 className="font-medium text-base mb-2 text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
                 {volunteer.name}
               </h3>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
                 {volunteer.role}
               </p>
             </div>
