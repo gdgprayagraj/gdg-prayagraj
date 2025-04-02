@@ -9,22 +9,23 @@ export default function Home() {
         {/* Hero Section */}
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
           <div>
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold transition-transform hover:scale-[1.02] duration-300 drop-shadow-sm text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
-              <div className="mb-4">Google Developer<br />Group</div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl">Prayagraj</div>
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold transition-transform hover:scale-[1.02] duration-300 drop-shadow-sm">
+              <div className="mb-4 animate-rainbow">
+                Google Developer<br />Group
+              </div>
+              <div className="text-3xl sm:text-4xl lg:text-5xl animate-rainbow">
+                Prayagraj
+              </div>
             </h1>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mt-6 mb-6 lg:mb-8 transition-colors duration-300">
-              Experience DevFest Prayagraj 2024 - where innovation meets the rich
-              heritage of Prayagraj. Join us as we blend cutting-edge technology
-              with local culture, bringing the spirit of collaboration, knowledge, and
-              growth to the heart of the Sangam city. Let's build the future of AI,
-              rooted in values and driven by purpose.
+              Experience DevFest Prayagraj 2024 - where innovation meets the rich heritage of Prayagraj. Join us as we
+              blend cutting-edge technology with local culture, bringing the spirit of collaboration, knowledge, and
+              growth to the heart of the Sangam city. Let's build the future of AI, rooted in values and driven by
+              purpose.
             </p>
             <div className="flex flex-wrap items-center gap-4 text-sm">
-              <div className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 p-2 rounded-lg transition-colors duration-200 hover:drop-shadow-md">
-              </div>
-              <div className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 p-2 rounded-lg transition-colors duration-200 hover:drop-shadow-md">
-              </div>
+              <div className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 p-2 rounded-lg transition-colors duration-200 hover:drop-shadow-md"></div>
+              <div className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 p-2 rounded-lg transition-colors duration-200 hover:drop-shadow-md"></div>
             </div>
           </div>
           <div className="relative mt-8 lg:mt-0">
@@ -44,19 +45,27 @@ export default function Home() {
         {/* Stats Section */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-8 mt-16 sm:mt-20 lg:mt-24">
           <div className="p-3 sm:p-4 lg:p-6 rounded-lg bg-blue-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm">
-            <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">20+</h3>
+            <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
+              20+
+            </h3>
             <p className="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-300">Speaker Engagements</p>
           </div>
           <div className="p-3 sm:p-4 lg:p-6 rounded-lg bg-pink-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm">
-            <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">13+</h3>
+            <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
+              13+
+            </h3>
             <p className="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-300">Sessions</p>
           </div>
           <div className="p-3 sm:p-4 lg:p-6 rounded-lg bg-green-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm">
-            <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">2000+</h3>
+            <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
+              2000+
+            </h3>
             <p className="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-300">Participants</p>
           </div>
           <div className="p-3 sm:p-4 lg:p-6 rounded-lg bg-yellow-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm">
-            <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">5+</h3>
+            <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
+              5+
+            </h3>
             <p className="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-300">Workshops</p>
           </div>
         </div>
@@ -68,8 +77,8 @@ export default function Home() {
               What we do?
             </h2>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-8 lg:mb-16">
-              Our mission is to equip our community members with practical skills, enabling them to communicate
-              their insights and drive innovative solutions effectively.
+              Our mission is to equip our community members with practical skills, enabling them to communicate their
+              insights and drive innovative solutions effectively.
             </p>
           </div>
 
@@ -128,75 +137,157 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 lg:mt-16">
-            <a href="https://developer.android.com" target="_blank" rel="noopener noreferrer"
-              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+            <a
+              href="https://developer.android.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800"
+            >
               <div className="flex flex-col items-center text-center">
-                <img src="https://developers.google.com/static/site-assets/images/products/android-logo.png" alt="Android" className="w-16 h-16 mb-4" />
+                <img
+                  src="https://developers.google.com/static/site-assets/images/products/android-logo.png"
+                  alt="Android"
+                  className="w-16 h-16 mb-4"
+                />
                 <h3 className="text-base font-medium text-gray-900 dark:text-white">Android</h3>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Modern tools to help you build experiences that people love across every Android device.</p>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                  Modern tools to help you build experiences that people love across every Android device.
+                </p>
               </div>
             </a>
 
-            <a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer"
-              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+            <a
+              href="https://cloud.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800"
+            >
               <div className="flex flex-col items-center text-center">
-                <img src="https://www.gstatic.com/images/branding/product/2x/google_cloud_64dp.png" alt="Google Cloud" className="w-16 h-16 mb-4" />
+                <img
+                  src="https://www.gstatic.com/images/branding/product/2x/google_cloud_64dp.png"
+                  alt="Google Cloud"
+                  className="w-16 h-16 mb-4"
+                />
                 <h3 className="text-base font-medium text-gray-900 dark:text-white">Google Cloud</h3>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">New customers get $300 in free credits to deploy a dynamic website, launch a VM, build a three-tier web app, and more.</p>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                  New customers get $300 in free credits to deploy a dynamic website, launch a VM, build a three-tier
+                  web app, and more.
+                </p>
               </div>
             </a>
 
-            <a href="https://ai.google.dev/" target="_blank" rel="noopener noreferrer"
-              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+            <a
+              href="https://ai.google.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800"
+            >
               <div className="flex flex-col items-center text-center">
-                <img src="https://developers.google.com/static/focus/images/ai-studio-icon.png" alt="Google AI Studio" className="w-16 h-16 mb-4" />
+                <img
+                  src="https://developers.google.com/static/focus/images/ai-studio-icon.png"
+                  alt="Google AI Studio"
+                  className="w-16 h-16 mb-4"
+                />
                 <h3 className="text-base font-medium text-gray-900 dark:text-white">Google AI Studio</h3>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Build generative AI applications quickly with Gemini in Google AI Studio.</p>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                  Build generative AI applications quickly with Gemini in Google AI Studio.
+                </p>
               </div>
             </a>
 
-            <a href="https://ai.google.dev/docs" target="_blank" rel="noopener noreferrer"
-              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+            <a
+              href="https://ai.google.dev/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800"
+            >
               <div className="flex flex-col items-center text-center">
-                <img src="https://developers.google.com/static/focus/images/gemini-icon.png" alt="Gemini API" className="w-16 h-16 mb-4" />
+                <img
+                  src="https://developers.google.com/static/focus/images/gemini-icon.png"
+                  alt="Gemini API"
+                  className="w-16 h-16 mb-4"
+                />
                 <h3 className="text-base font-medium text-gray-900 dark:text-white">Gemini API</h3>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Build and deploy production ready generative AI experiences, enhanced by Gemini models. Get started for free!</p>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                  Build and deploy production ready generative AI experiences, enhanced by Gemini models. Get started
+                  for free!
+                </p>
               </div>
             </a>
 
-            <a href="https://chromeos.dev" target="_blank" rel="noopener noreferrer"
-              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+            <a
+              href="https://chromeos.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800"
+            >
               <div className="flex flex-col items-center text-center">
-                <img src="https://developers.google.com/static/homepage-assets/images/chromeos-logo.svg" alt="Chrome OS" className="w-16 h-16 mb-4" />
+                <img
+                  src="https://developers.google.com/static/homepage-assets/images/chromeos-logo.svg"
+                  alt="Chrome OS"
+                  className="w-16 h-16 mb-4"
+                />
                 <h3 className="text-base font-medium text-gray-900 dark:text-white">Chrome OS</h3>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Modern tools and features that help you build high-quality web experiences.</p>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                  Modern tools and features that help you build high-quality web experiences.
+                </p>
               </div>
             </a>
 
-            <a href="https://play.google.com/console" target="_blank" rel="noopener noreferrer"
-              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+            <a
+              href="https://play.google.com/console"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800"
+            >
               <div className="flex flex-col items-center text-center">
-                <img src="https://www.gstatic.com/images/branding/product/2x/play_prism_64dp.png" alt="Google Play" className="w-16 h-16 mb-4" />
+                <img
+                  src="https://www.gstatic.com/images/branding/product/2x/play_prism_64dp.png"
+                  alt="Google Play"
+                  className="w-16 h-16 mb-4"
+                />
                 <h3 className="text-base font-medium text-gray-900 dark:text-white">Google Play</h3>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Grow your business, improve app quality, engage your audience, and earn revenue.</p>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                  Grow your business, improve app quality, engage your audience, and earn revenue.
+                </p>
               </div>
             </a>
 
-            <a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer"
-              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+            <a
+              href="https://firebase.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800"
+            >
               <div className="flex flex-col items-center text-center">
-                <img src="https://www.gstatic.com/devrel-devsite/prod/v7b55e5943f9ab80a0423ff6653c19f56a0e5266641f85a6a76aee662b0157d18/firebase/images/icon.svg" alt="Firebase" className="w-16 h-16 mb-4" />
+                <img
+                  src="https://www.gstatic.com/devrel-devsite/prod/v7b55e5943f9ab80a0423ff6653c19f56a0e5266641f85a6a76aee662b0157d18/firebase/images/icon.svg"
+                  alt="Firebase"
+                  className="w-16 h-16 mb-4"
+                />
                 <h3 className="text-base font-medium text-gray-900 dark:text-white">Firebase</h3>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">Build, improve, and grow your app with Firebase.</p>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                  Build, improve, and grow your app with Firebase.
+                </p>
               </div>
             </a>
 
-            <a href="https://tensorflow.org" target="_blank" rel="noopener noreferrer"
-              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800">
+            <a
+              href="https://tensorflow.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white dark:bg-[#111827]/80 rounded-xl p-6 hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-800"
+            >
               <div className="flex flex-col items-center text-center">
-                <img src="https://developers.google.com/static/site-assets/images/products/tensorflow-logo-196.png" alt="TensorFlow" className="w-16 h-16 mb-4" />
+                <img
+                  src="https://developers.google.com/static/site-assets/images/products/tensorflow-logo-196.png"
+                  alt="TensorFlow"
+                  className="w-16 h-16 mb-4"
+                />
                 <h3 className="text-base font-medium text-gray-900 dark:text-white">TensorFlow</h3>
-                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">An end-to-end platform for machine learning.</p>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                  An end-to-end platform for machine learning.
+                </p>
               </div>
             </a>
           </div>
@@ -207,7 +298,12 @@ export default function Home() {
               className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
             >
               <span className="text-base font-medium">View All Tools</span>
-              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
@@ -221,7 +317,8 @@ export default function Home() {
               Become a leader in your local developer community
             </h2>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
-              Lead a Google Developer Group (GDG) and empower your local developer community. Before you start, check the GDG Chapter Directory to see if a chapter already exists in your city or on your campus.
+              Lead a Google Developer Group (GDG) and empower your local developer community. Before you start, check
+              the GDG Chapter Directory to see if a chapter already exists in your city or on your campus.
             </p>
           </div>
 
@@ -230,10 +327,13 @@ export default function Home() {
               <div className="order-2 lg:order-1">
                 <div className="space-y-4">
                   <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
-                    If one does, reach out to the organizers through the chapter page and get involved. If there isn't a GDG near you, apply to start one!
+                    If one does, reach out to the organizers through the chapter page and get involved. If there isn't a
+                    GDG near you, apply to start one!
                   </p>
                   <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
-                    Leading a GDG allows you to develop leadership skills, gain recognition, expand your network and collaborate with other passionate developers. You'll create a welcoming space for learning and growth, make a positive impact on the tech world, and access valuable resources.
+                    Leading a GDG allows you to develop leadership skills, gain recognition, expand your network and
+                    collaborate with other passionate developers. You'll create a welcoming space for learning and
+                    growth, make a positive impact on the tech world, and access valuable resources.
                   </p>
                   <div className="pt-6">
                     <a
@@ -258,7 +358,7 @@ export default function Home() {
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                       className="w-full h-full"
-                      style={{ aspectRatio: '4/3' }}
+                      style={{ aspectRatio: "4/3" }}
                     ></iframe>
                   </div>
                 </div>
@@ -279,8 +379,12 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 lg:mt-16">
-            <a href="https://medium.com/@adityakumar2019.ak/my-journey-road-to-wiki-wikiclub-tech-india-2d1a19dab521" target="_blank" rel="noopener noreferrer" 
-              className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
+            <a
+              href="https://medium.com/@adityakumar2019.ak/my-journey-road-to-wiki-wikiclub-tech-india-2d1a19dab521"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900"
+            >
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
                   <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">📝</div>
@@ -298,7 +402,12 @@ export default function Home() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
                   Read Article
-                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
@@ -306,8 +415,12 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="https://medium.com/@adityakumar2019.ak/my-first-devfest-a-volunteers-experience-at-devfest-2023-prayagraj-232035102743" target="_blank" rel="noopener noreferrer"
-              className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
+            <a
+              href="https://medium.com/@adityakumar2019.ak/my-first-devfest-a-volunteers-experience-at-devfest-2023-prayagraj-232035102743"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900"
+            >
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
                   <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">🎯</div>
@@ -325,7 +438,12 @@ export default function Home() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
                   Read Article
-                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
@@ -333,8 +451,12 @@ export default function Home() {
               </div>
             </a>
 
-            <a href="https://medium.com/@info2ankitkumarverma/getting-started-with-tensorflow-a-guide-for-beginners-591287bfeb52" target="_blank" rel="noopener noreferrer"
-              className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900">
+            <a
+              href="https://medium.com/@info2ankitkumarverma/getting-started-with-tensorflow-a-guide-for-beginners-591287bfeb52"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900"
+            >
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
                   <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">🤖</div>
@@ -352,7 +474,12 @@ export default function Home() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
                   Read Article
-                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
@@ -367,7 +494,12 @@ export default function Home() {
               className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
             >
               <span className="text-base font-medium">View All Articles</span>
-              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
@@ -381,7 +513,8 @@ export default function Home() {
               Past Events
             </h2>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-8 lg:mb-16">
-              Explore our previous events and join us in upcoming ones to be part of the vibrant GDG Prayagraj community.
+              Explore our previous events and join us in upcoming ones to be part of the vibrant GDG Prayagraj
+              community.
             </p>
           </div>
 
@@ -398,8 +531,12 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center">
                 <span className="text-xs text-gray-500 dark:text-gray-400 mb-1">26 Mar 2025</span>
-                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">Workshop / Study Group</span>
-                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Build With AI- Prayagraj</h3>
+                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">
+                  Workshop / Study Group
+                </span>
+                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  Build With AI- Prayagraj
+                </h3>
                 <p className="text-xs text-gray-600 dark:text-gray-300">GDG Prayagraj</p>
               </div>
             </div>
@@ -416,8 +553,12 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center">
                 <span className="text-xs text-gray-500 dark:text-gray-400 mb-1">26 Oct 2024</span>
-                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">External Ticketing</span>
-                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Devfest Prayagraj 2024</h3>
+                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">
+                  External Ticketing
+                </span>
+                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  Devfest Prayagraj 2024
+                </h3>
                 <p className="text-xs text-gray-600 dark:text-gray-300">GDG Prayagraj</p>
               </div>
             </div>
@@ -434,8 +575,12 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center">
                 <span className="text-xs text-gray-500 dark:text-gray-400 mb-1">29 Jun 2024</span>
-                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">Speaker Session / Tech Talk</span>
-                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Google I/O Extended Prayagraj</h3>
+                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">
+                  Speaker Session / Tech Talk
+                </span>
+                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  Google I/O Extended Prayagraj
+                </h3>
                 <p className="text-xs text-gray-600 dark:text-gray-300">GDG Prayagraj</p>
               </div>
             </div>
@@ -452,8 +597,12 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center">
                 <span className="text-xs text-gray-500 dark:text-gray-400 mb-1">8 May 2024</span>
-                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">Hackathon</span>
-                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Build with AI - Startup Show</h3>
+                <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full mb-2">
+                  Hackathon
+                </span>
+                <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  Build with AI - Startup Show
+                </h3>
                 <p className="text-xs text-gray-600 dark:text-gray-300">GDG Prayagraj</p>
               </div>
             </div>
@@ -465,7 +614,12 @@ export default function Home() {
               className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:opacity-95 transition-all duration-300 shadow-md hover:shadow-xl dark:shadow-blue-500/30 dark:hover:shadow-blue-500/50 transform hover:-translate-y-0.5"
             >
               <span className="text-base font-medium">View All Events</span>
-              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
@@ -480,23 +634,40 @@ export default function Home() {
           <div className="bg-gray-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-12">
             <div className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 leading-relaxed space-y-6">
               <p>
-                Google Developers Group Prayagraj (GDG Prayagraj) is for developers who are interested in Google's developer technology; everything from the Android, App Engine, and Google Chrome platforms, to product APIs like the Maps API, YouTube API and Google Calendar API.
+                Google Developers Group Prayagraj (GDG Prayagraj) is for developers who are interested in Google's
+                developer technology; everything from the Android, App Engine, and Google Chrome platforms, to product
+                APIs like the Maps API, YouTube API and Google Calendar API.
+              </p>
+
+              <p>We organize CodeLabs, tech talks, hackathons, Extended events, devFests, and study jams.</p>
+
+              <p>
+                The group is free to attend and open to all who are interested in discussing and learning more about
+                software development with tools and technologies from Google or the open-source community.
               </p>
 
               <p>
-                We organize CodeLabs, tech talks, hackathons, Extended events, devFests, and study jams.
+                Want to be volunteer fill this form{" "}
+                <a
+                  href="https://forms.gle/N3w6XxafVVtvWrPbA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  https://forms.gle/N3w6XxafVVtvWrPbA
+                </a>
               </p>
 
               <p>
-                The group is free to attend and open to all who are interested in discussing and learning more about software development with tools and technologies from Google or the open-source community.
-              </p>
-
-              <p>
-                Want to be volunteer fill this form <a href="https://forms.gle/N3w6XxafVVtvWrPbA" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">https://forms.gle/N3w6XxafVVtvWrPbA</a>
-              </p>
-
-              <p>
-                Join us on social <a href="https://linktr.ee/gdgprayagraj" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">https://linktr.ee/gdgprayagraj</a>
+                Join us on social{" "}
+                <a
+                  href="https://linktr.ee/gdgprayagraj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  https://linktr.ee/gdgprayagraj
+                </a>
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-4 mt-6">
@@ -509,10 +680,7 @@ export default function Home() {
                 Community Page
                 <span className="text-lg sm:text-xl">→</span>
               </a>
-              <a
-                href="#"
-                className="text-sm sm:text-base text-blue-600 dark:text-blue-400 hover:underline"
-              >
+              <a href="#" className="text-sm sm:text-base text-blue-600 dark:text-blue-400 hover:underline">
                 Learn more about us
               </a>
             </div>
@@ -527,8 +695,10 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8">
               <div>
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200 mb-3 lg:mb-4">
-                  Keep in touch with GDG<br />
-                  Prayagraj for the latest<br />
+                  Keep in touch with GDG
+                  <br />
+                  Prayagraj for the latest
+                  <br />
                   announcements
                 </h2>
                 <p className="text-sm sm:text-base lg:text-lg text-gray-600 dark:text-gray-300 mb-4 sm:mb-6">
@@ -552,7 +722,7 @@ export default function Home() {
                     className="bg-white dark:bg-[#1F2937] p-3 rounded-full hover:bg-gray-100 dark:hover:bg-[#374151] transition-all duration-300"
                   >
                     <svg className="w-6 h-6 text-gray-700 dark:text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.237 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v4.117c0 .318.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                      <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.113.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.237 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v4.117c0 .318.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
                     </svg>
                   </a>
                   <a
@@ -562,7 +732,7 @@ export default function Home() {
                     className="bg-white dark:bg-[#1F2937] p-3 rounded-full hover:bg-gray-100 dark:hover:bg-[#374151] transition-all duration-300"
                   >
                     <svg className="w-6 h-6 text-gray-700 dark:text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                     </svg>
                   </a>
                 </div>
@@ -613,10 +783,7 @@ export default function Home() {
                 >
                   About WTM Program
                 </a>
-                <a
-                  href="/faq"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
+                <a href="/faq" className="text-gray-300 hover:text-white transition-colors">
                   FAQ
                 </a>
                 <a

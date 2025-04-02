@@ -142,3 +142,34 @@
     opacity: 0;
   }
 }
+
+@keyframes rainbow {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -200% 50%;
+  }
+}
+
+.animate-rainbow {
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    to left,
+    #4169e1,
+    /* Royal Blue */ #6495ed,
+    /* Cornflower Blue */ #9370db,
+    /* Medium Purple */ #ba55d3,
+    /* Medium Orchid */ #ff69b4,
+    /* Hot Pink */ #4169e1,
+    /* Royal Blue */ #6495ed,
+    /* Cornflower Blue */ #9370db,
+    /* Medium Purple */ #ba55d3,
+    /* Medium Orchid */ #ff69b4,
+    /* Hot Pink */ #4169e1 /* Royal Blue */
+  );
+  animation: rainbow 12s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
