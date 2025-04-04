@@ -1,45 +1,44 @@
-'use server';
+"use server";
 
-import nodemailer from 'nodemailer';
-import connectToDB from '@/db';
-import CodeOfConductSubmission from '@/db/models/code-of-conduct-submission';
+import nodemailer from "nodemailer";
+import connectToDB from "@/db";
+import CodeOfConductSubmission from "@/db/models/code-of-conduct-submission";
 
 // Admin email addresses
-const ADMIN_EMAILS = process.env.ADMIN_EMAILS
-	? JSON.parse(process.env.ADMIN_EMAILS)
-	: ['info2ankitkumarverma@gmail.com'];
+const ADMIN_EMAILS = process.env.ADMIN_EMAILS ? JSON.parse(process.env.ADMIN_EMAILS) : ["gdgprayag@gmail.com"];
 
 // Configure nodemailer transporter
 // Note: For production use, you should use a real SMTP service
 const transporter = nodemailer.createTransport({
-	host: process.env.SMTP_HOST || 'smtp.gmail.com',
-	port: parseInt(process.env.SMTP_PORT || '587'),
-	secure: process.env.SMTP_SECURE === 'true',
-	auth: {
-		user: process.env.SMTP_USER,
-		pass: process.env.SMTP_PASSWORD,
-	},
+  host: process.env.SMTP_HOST || "smtp.gmail.com",
+  port: parseInt(process.env.SMTP_PORT || "587"),
+  secure: process.env.SMTP_SECURE === "true",
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASSWORD,
+  },
 });
 
 // Helper function to send email
 async function sendEmail(to, subject, html) {
-	try {
-		await transporter.sendMail({
-			from: process.env.SMTP_FROM,
-			to,
-			subject,
-			html,
-		});
-		return { success: true };
-	} catch (error) {
-		console.error('Error sending email:', error);
-		return { success: false, error: error.message };
-	}
+  try {
+    await transporter.sendMail({
+      from: process.env.SMTP_FROM,
+      to,
+      subject,
+      html,
+      replyTo: process.env.REPLY_TO,
+    });
+    return { success: true };
+  } catch (error) {
+    console.error("Error sending email:", error);
+    return { success: false, error: error.message };
+  }
 }
 
 // Generate user confirmation email content
 function getUserEmailContent(name) {
-	return `
+  return `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
       <h2>Code of Conduct Confirmation</h2>
       <p>Dear ${name},</p>
@@ -64,7 +63,7 @@ function getUserEmailContent(name) {
 
 // Generate admin notification email content
 function getAdminEmailContent(name, email) {
-	return `
+  return `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
       <h2>New Code of Conduct Acceptance</h2>
       <p>A new user has accepted the GDG Prayagraj Code of Conduct:</p>
@@ -81,87 +80,108 @@ function getAdminEmailContent(name, email) {
 
 // Save form submission to MongoDB
 async function saveToDatabase(name, email) {
-	try {
-		// Connect to the database
-		await connectToDB();
+  try {
+    // Connect to the database
+    await connectToDB();
 
-		// Insert the document
-		const result = new CodeOfConductSubmission({
-			name,
-			email,
-			acceptedAt: new Date(),
-			createdAt: new Date(),
-		});
+    // Insert the document
+    const result = new CodeOfConductSubmission({
+      name,
+      email,
+      acceptedAt: new Date(),
+      createdAt: new Date(),
+    });
 
-		// Save the document to the database
-		await result.save();
+    // Save the document to the database
+    await result.save();
 
-		return { success: true, id: result._id };
-	} catch (error) {
-		console.error('Error saving to database:', error);
-		return { success: false, error: error.message };
-	}
+    return { success: true, id: result._id };
+  } catch (error) {
+    console.error("Error saving to database:", error);
+    return { success: false, error: error.message };
+  }
 }
 
 // Main server action to handle form submission
 export async function submitCodeOfConduct(formData) {
-	try {
-		const name = formData.get('name');
-		const email = formData.get('email');
-		const acceptedTerms = formData.get('acceptTerms') === 'on';
+  try {
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const acceptedTerms = formData.get("acceptTerms") === "on";
 
-		// Validate form data
-		if (!name || !email || !acceptedTerms) {
-			return {
-				success: false,
-				error: 'Please fill out all fields and accept the terms.',
-			};
-		}
+    // Validate form data
+    if (!name || !email || !acceptedTerms) {
+      return {
+        success: false,
+        error: "Please fill out all fields and accept the terms.",
+      };
+    }
 
-		// Save to MongoDB database
-		const dbResult = await saveToDatabase(name, email);
-		if (!dbResult.success) {
-			console.error('Failed to save to database:', dbResult.error);
-			// Continue with the process even if DB save fails - we'll log but not block the submission
-		}
+    // Save to MongoDB database
+    const dbResult = await saveToDatabase(name, email);
+    if (!dbResult.success) {
+      console.error("Failed to save to database:", dbResult.error);
+      // Continue with the process even if DB save fails - we'll log but not block the submission
+    }
 
-		// Send confirmation email to user
-		const userEmailResult = await sendEmail(
-			email,
-			'GDG Prayagraj Code of Conduct Confirmation',
-			getUserEmailContent(name)
-		);
+    // Send confirmation email to user
+    const userEmailResult = await sendEmail(
+      email,
+      "GDG Prayagraj Code of Conduct Confirmation",
+      getUserEmailContent(name),
+    );
 
-		// Send notifications to all admin emails
-		const adminNotifications = await Promise.all(
-			ADMIN_EMAILS.map((adminEmail) =>
-				sendEmail(
-					adminEmail,
-					'New Code of Conduct Acceptance',
-					getAdminEmailContent(name, email)
-				)
-			)
-		);
+    // Send notifications to all admin emails
+    const adminNotifications = await Promise.all(
+      ADMIN_EMAILS.map((adminEmail) =>
+        sendEmail(adminEmail, "New Code of Conduct Acceptance", getAdminEmailContent(name, email)),
+      ),
+    );
 
-		// Check if any admin notification failed
-		const anyAdminEmailFailed = adminNotifications.some(
-			(result) => !result.success
-		);
+    // Check if any admin notification failed
+    const anyAdminEmailFailed = adminNotifications.some((result) => !result.success);
 
-		return {
-			success: userEmailResult.success && !anyAdminEmailFailed,
-			error: userEmailResult.success
-				? anyAdminEmailFailed
-					? 'Failed to notify all administrators'
-					: null
-				: userEmailResult.error,
-			dbSuccess: dbResult.success,
-		};
-	} catch (error) {
-		console.error('Error in submitCodeOfConduct:', error);
-		return {
-			success: false,
-			error: 'An unexpected error occurred. Please try again later.',
-		};
-	}
+    return {
+      success: userEmailResult.success && !anyAdminEmailFailed,
+      error: userEmailResult.success
+        ? anyAdminEmailFailed
+          ? "Failed to notify all administrators"
+          : null
+        : userEmailResult.error,
+      dbSuccess: dbResult.success,
+    };
+  } catch (error) {
+    console.error("Error in submitCodeOfConduct:", error);
+    return {
+      success: false,
+      error: "An unexpected error occurred. Please try again later.",
+    };
+  }
+}
+
+/**
+ * Fetches all users who have signed up
+ * @returns {Promise<Array>} Array of user objects
+ */
+export async function getUsers() {
+  try {
+    await connectToDB();
+    // Fetch users sorted by most recent first and convert to plain objects
+    const users = await CodeOfConductSubmission.find({}).sort({ createdAt: -1 }).select("name email acceptedAt").lean(); // Convert Mongoose documents to plain objects
+
+    // Convert MongoDB ObjectId and Date to strings
+    const serializedUsers = users.map((user) => ({
+      ...user,
+      _id: user._id.toString(),
+      acceptedAt: user.acceptedAt.toISOString(),
+    }));
+
+    return { success: true, data: serializedUsers };
+  } catch (error) {
+    console.error("Error fetching users:", error);
+    return {
+      success: false,
+      error: "Failed to fetch users. Please try again later.",
+    };
+  }
 }
