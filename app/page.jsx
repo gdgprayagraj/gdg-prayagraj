@@ -8,22 +8,26 @@ export default function Home() {
       {/* Main container with consistent max-width and padding */}
       <main className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
         {/* Hero Section */}
-        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center">
-          <div>
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold transition-transform hover:scale-[1.02] duration-300 drop-shadow-sm">
-              <div className="mb-4 animate-rainbow">
-                Google Developer
-                <br />
-                Group
-              </div>
-              <div className="text-3xl sm:text-4xl lg:text-5xl animate-rainbow">Prayagraj</div>
-            </h1>
-            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mt-6 mb-6 lg:mb-8 transition-colors duration-300">
-              Experience DevFest Prayagraj 2024 - where innovation meets the rich heritage of Prayagraj. Join us as we
-              blend cutting-edge technology with local culture, bringing the spirit of collaboration, knowledge, and
-              growth to the heart of the Sangam city. Let's build the future of AI, rooted in values and driven by
-              purpose.
-            </p>
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start">
+          <div className="flex flex-col space-y-8">
+            <div className="relative">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold transition-transform hover:scale-[1.02] duration-300 drop-shadow-sm">
+                <div className="mb-2 animate-rainbow">
+                  Google Developer
+                  <br />
+                  Group
+                </div>
+                <div className="text-3xl sm:text-4xl lg:text-5xl mt-4 pb-8 animate-rainbow">Prayagraj</div>
+              </h1>
+            </div>
+            <div className="relative">
+              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 transition-colors duration-300">
+                Experience DevFest Prayagraj 2024 - where innovation meets the rich heritage of Prayagraj. Join us as we
+                blend cutting-edge technology with local culture, bringing the spirit of collaboration, knowledge, and
+                growth to the heart of the Sangam city. Let's build the future of AI, rooted in values and driven by
+                purpose.
+              </p>
+            </div>
             <div className="flex flex-wrap items-center gap-4 text-sm">
               <div className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 p-2 rounded-lg transition-colors duration-200 hover:drop-shadow-md"></div>
               <div className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 p-2 rounded-lg transition-colors duration-200 hover:drop-shadow-md"></div>
