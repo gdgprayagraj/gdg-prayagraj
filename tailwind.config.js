@@ -17,9 +17,13 @@ module.exports = {
       },
       animation: {
         gradient: 'gradient 5s ease infinite',
+        rainbow: 'rainbow 8s infinite',
       },
       backgroundSize: {
         '200%': '200%',
+      },
+      fontFamily: {
+        sans: ['Google Sans Display', 'sans-serif'],
       },
     },
   },
