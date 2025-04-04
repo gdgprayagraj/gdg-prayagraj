@@ -166,12 +166,17 @@ export async function submitCodeOfConduct(formData) {
 export async function getUsers() {
   try {
     await connectToDB();
-    // Fetch users sorted by most recent first
-    const users = await CodeOfConductSubmission.find({})
-      .sort({ createdAt: -1 })
-      .select("_id name email acceptedAt");
+    // Fetch users sorted by most recent first and convert to plain objects
+    const users = await CodeOfConductSubmission.find({}).sort({ createdAt: -1 }).select("name email acceptedAt").lean(); // Convert Mongoose documents to plain objects
 
-    return { success: true, data: users };
+    // Convert MongoDB ObjectId and Date to strings
+    const serializedUsers = users.map((user) => ({
+      ...user,
+      _id: user._id.toString(),
+      acceptedAt: user.acceptedAt.toISOString(),
+    }));
+
+    return { success: true, data: serializedUsers };
   } catch (error) {
     console.error("Error fetching users:", error);
     return {
