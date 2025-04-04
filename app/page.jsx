@@ -53,7 +53,7 @@ export default function Home() {
             <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
               20+
             </h3>
-            <p className="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-300">Speaker Engagements</p>
+            <p className="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-300">Speakers</p>
           </div>
           <div className="p-3 sm:p-4 lg:p-6 rounded-lg bg-pink-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm">
             <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
