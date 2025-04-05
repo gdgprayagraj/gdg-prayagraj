@@ -103,42 +103,6 @@ const CoreTeam = [
   },
 ];
 
-const Ambassadors = [
-  {
-    name: "Shivam Srivastava",
-    role: "Google Cloud Innovator",
-    description: "Expert in Google Cloud Platform and DevOps practices",
-    imageUrl: "/ambassadors/shivam.jpg",
-    badges: ["Google Cloud", "DevOps"],
-    socials: {
-      linkedin: "https://linkedin.com/in/shivam",
-      github: "https://github.com/shivam"
-    }
-  },
-  {
-    name: "Priya Sharma",
-    role: "Android Developer Expert",
-    description: "Specializing in Android development and Kotlin",
-    imageUrl: "/ambassadors/priya.jpg",
-    badges: ["Android", "Kotlin"],
-    socials: {
-      linkedin: "https://linkedin.com/in/priya",
-      github: "https://github.com/priya"
-    }
-  },
-  {
-    name: "Rahul Verma",
-    role: "ML/AI Ambassador",
-    description: "Expert in TensorFlow and Machine Learning",
-    imageUrl: "/ambassadors/rahul.jpg",
-    badges: ["TensorFlow", "AI/ML"],
-    socials: {
-      linkedin: "https://linkedin.com/in/rahul",
-      github: "https://github.com/rahul"
-    }
-  }
-];
-
 const VolunteerTeam = [
   {
     name: "Anshuman Rai",
@@ -215,6 +179,34 @@ const VolunteerTeam = [
     role: "UCER",
     imageUrl: "/volunteers/saumya.jpg",
   },
+];
+
+const AmbassadorTeam = [
+  {
+    name: "Shivansh Mishrai",
+    role: "REC Mirzapur",
+    imageUrl: "/ambassadors/shivansh.jpg",
+  },
+  {
+    name: "Vishal Maurya",
+    role: "Prasad Institute of Technology",
+    imageUrl: "/ambassadors/vishal.jpg",
+  },
+  {
+    name: "Aditya singh",
+    role: "Greater Noida Institute of Technology",
+    imageUrl: "/ambassadors/aditya.jpg",
+  },
+  {
+    name: "Rohan chaurasia",
+    role: "REC Mirzapur",
+    imageUrl: "/ambassadors/rohan.jpeg",
+  },
+  {
+    name: "Anshuman Dwivedi",
+    role: "REC Mirzapur",
+    imageUrl: "/ambassadors/anshuman.jpg",
+  }
 ];
 
 export default function TeamPage() {
@@ -349,41 +341,33 @@ export default function TeamPage() {
         </div>
       </div>
 
-      {/* Ambassadors Section */}
+      {/* Ambassador Team Section */}
       <div className="container mx-auto px-4 pb-12 border-t border-gray-200 dark:border-gray-800">
         <h2 className="text-2xl font-bold my-8 text-center text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
-          Our Ambassadors
+          Ambassadors
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
-          {Ambassadors.map((ambassador, index) => (
+          {AmbassadorTeam.map((ambassador, index) => (
             <div
               key={index}
               className="bg-white dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-all duration-300"
             >
-              <Image
-                src={ambassador.imageUrl}
-                alt={ambassador.name}
-                width={120}
-                height={120}
-                className="w-24 h-24 mx-auto mb-4 rounded-lg object-cover"
-                quality={80}
-              />
+              {ambassador.imageUrl && (
+                <Image
+                  src={ambassador.imageUrl}
+                  alt={ambassador.name}
+                  width={120}
+                  height={120}
+                  className="w-24 h-24 mx-auto mb-4 rounded-lg object-cover"
+                  quality={80}
+                />
+              )}
               <h3 className="font-medium text-base mb-2 text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
                 {ambassador.name}
               </h3>
-              <p className="text-sm text-blue-600 dark:text-blue-400 mb-2">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
                 {ambassador.role}
               </p>
-              <div className="flex flex-wrap gap-1 justify-center mb-3">
-                {ambassador.badges.map((badge, badgeIndex) => (
-                  <span
-                    key={badgeIndex}
-                    className="px-2 py-0.5 text-xs bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 rounded-full"
-                  >
-                    {badge}
-                  </span>
-                ))}
-              </div>
             </div>
           ))}
         </div>
