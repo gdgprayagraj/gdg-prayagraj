@@ -86,12 +86,12 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-            {/* Find an event */}
+            {/* Talks */}
             <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-[#111827]/80">
               <div className="relative h-[200px] overflow-hidden">
                 <Image
                   src="/what-we-do/img1.jpg"
-                  alt="Find an event"
+                  alt="Talks"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -107,20 +107,20 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#1a73e8] dark:text-[#4285f4] mb-2">Find an event</h3>
+                <h3 className="text-xl font-bold text-[#1a73e8] dark:text-[#4285f4] mb-2">Talks</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Grow your knowledge through online and in-person developer events.
                 </p>
                 <a
-                  href="/events"
+                  href="https://developers.google.com/events"
                   className="inline-flex items-center px-6 py-2 bg-[#1a73e8] hover:bg-[#1557b0] text-white rounded-full transition-all duration-300"
                 >
-                  View events
+                  View Talks
                 </a>
               </div>
             </div>
 
-            {/* Improve technical skills */}
+            {/* Codelabs */}
             <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-[#111827]/80">
               <div className="relative h-[200px] overflow-hidden">
                 <Image
@@ -141,12 +141,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[#1a73e8] dark:text-[#4285f4] mb-2">Improve technical skills</h3>
+                <h3 className="text-xl font-bold text-[#1a73e8] dark:text-[#4285f4] mb-2">Codelabs</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                   Keep up with Google technology. Sharpen skills and master new ones.
                 </p>
                 <a
-                  href="/learning"
+                  href="https://developers.google.com/learn"
                   className="inline-flex items-center px-6 py-2 bg-[#1a73e8] hover:bg-[#1557b0] text-white rounded-full transition-all duration-300"
                 >
                   Start learning
@@ -180,7 +180,7 @@ export default function Home() {
                   Meet a diverse network, no matter where you are on your developer journey.
                 </p>
                 <a
-                  href="https://gdg.community.dev/gdg-prayagraj/"
+                  href="https://bento.me/gdgp"
                   className="inline-flex items-center px-6 py-2 bg-[#1a73e8] hover:bg-[#1557b0] text-white rounded-full transition-all duration-300"
                 >
                   Explore communities
