@@ -186,3 +186,36 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.rainbow-border {
+  position: relative;
+}
+
+.rainbow-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    90deg,
+    rgb(76, 110, 245),
+    rgb(147, 51, 234),
+    rgb(236, 72, 153),
+    rgb(76, 110, 245)
+  );
+  border-radius: 9999px;
+  z-index: -1;
+  background-size: 200% 100%;
+  animation: moveGradient 3s linear infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
