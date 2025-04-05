@@ -34,9 +34,9 @@ export default function RootLayout({ children }) {
       <body className={`${openSans.className} bg-gray-50 dark:bg-gray-900`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {/* Navigation */}
-          <nav className="sticky top-3 z-50 bg-gray-50 dark:bg-gray-900">
+          <nav className="sticky top-3 z-50 bg-transparent">
             <div className="mx-auto max-w-7xl px-4">
-              <div className="flex items-center justify-between bg-gray-50 dark:bg-gray-900 rounded-full px-5 sm:px-7 py-2.5 sm:py-3 rainbow-border">
+              <div className="flex items-center justify-between bg-gray-200 dark:bg-gray-800 rounded-full px-5 sm:px-7 py-2.5 sm:py-3">
                 <div className="flex items-center gap-3">
                   <div className="flex items-center gap-2">
                     <Image
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
                       height={80}
                       className="w-52 sm:w-64"
                     />
-                    <span className="hidden sm:inline-flex px-2 py-0.5 bg-[#E5E7EB] dark:bg-gray-700 rounded-full text-sm">
+                    <span className="hidden sm:inline-flex px-2 py-0.5 bg-white dark:bg-white rounded-full text-sm text-gray-700">
                       Prayagraj
                     </span>
                   </div>
