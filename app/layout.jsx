@@ -31,12 +31,12 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://www.youtube.com" />
         <link rel="dns-prefetch" href="https://www.youtube.com" />
       </head>
-      <body className={`${openSans.className} bg-gray-50 dark:bg-gray-800`} suppressHydrationWarning>
+      <body className={`${openSans.className} bg-gray-50 dark:bg-gray-900`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {/* Navigation */}
-          <nav className="sticky top-3 z-50 bg-gray-50 dark:bg-gray-800">
+          <nav className="sticky top-3 z-50 bg-gray-50 dark:bg-gray-900">
             <div className="mx-auto max-w-7xl px-4">
-              <div className="flex items-center justify-between bg-gray-50 dark:bg-gray-800 rounded-full px-5 sm:px-7 py-2.5 sm:py-3 rainbow-border">
+              <div className="flex items-center justify-between bg-gray-50 dark:bg-gray-900 rounded-full px-5 sm:px-7 py-2.5 sm:py-3 rainbow-border">
                 <div className="flex items-center gap-3">
                   <div className="flex items-center gap-2">
                     <Image
