@@ -22,11 +22,9 @@ export default function Home() {
             </div>
             <div className="relative">
               <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 transition-colors duration-300">
-                Experience DevFest Prayagraj 2024 - where innovation meets the rich heritage of Prayagraj. Join us as we
-                blend cutting-edge technology with local culture, bringing the spirit of collaboration, knowledge, and
-                growth to the heart of the Sangam city. Let's build the future of AI, rooted in values and driven by
-                purpose.
+              In the heart of Prayagraj, where the sacred rivers Ganga, Yamuna, and Saraswati converge, we celebrate the fusion of ideas, innovation, and technology. Just as these waters bring life to the city, our community fosters growth, collaboration, and knowledge-sharing among developers.
               </p>
+
             </div>
             <div className="flex flex-wrap items-center gap-4 text-sm">
               <div className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-800 p-2 rounded-lg transition-colors duration-200 hover:drop-shadow-md"></div>
@@ -87,45 +85,141 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8 lg:mt-16">
-            <div className="bg-gray-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 hover:shadow-lg transition-shadow">
-              <div className="text-gray-600 dark:text-gray-300 mb-4 text-2xl sm:text-3xl">💬</div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
-                Talks
-              </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
-                Get updated with the latest news and announcements
-              </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+            {/* Find an event */}
+            <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-[#111827]/80">
+              <div className="relative h-[200px] overflow-hidden">
+                <Image
+                  src="/what-we-do/img1.jpg"
+                  alt="Find an event"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-0 right-0">
+                  <Image
+                    src="/icons/icon1.png"
+                    alt="Event icon"
+                    width={64}
+                    height={64}
+                    className="w-16 h-16"
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#1a73e8] dark:text-[#4285f4] mb-2">Find an event</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Grow your knowledge through online and in-person developer events.
+                </p>
+                <a
+                  href="/events"
+                  className="inline-flex items-center px-6 py-2 bg-[#1a73e8] hover:bg-[#1557b0] text-white rounded-full transition-all duration-300"
+                >
+                  View events
+                </a>
+              </div>
             </div>
 
-            <div className="bg-gray-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 hover:shadow-lg transition-shadow">
-              <div className="text-gray-600 dark:text-gray-300 mb-4 text-2xl sm:text-3xl">&lt;/&gt;</div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
-                Codelabs
-              </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
-                Get hands-on experience and guidance from the community
-              </p>
+            {/* Improve technical skills */}
+            <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-[#111827]/80">
+              <div className="relative h-[200px] overflow-hidden">
+                <Image
+                  src="/what-we-do/img2.jpg"
+                  alt="Improve technical skills"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-0 right-0">
+                  <Image
+                    src="/icons/icon2.png"
+                    alt="Skills icon"
+                    width={64}
+                    height={64}
+                    className="w-16 h-16"
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#1a73e8] dark:text-[#4285f4] mb-2">Improve technical skills</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Keep up with Google technology. Sharpen skills and master new ones.
+                </p>
+                <a
+                  href="/learning"
+                  className="inline-flex items-center px-6 py-2 bg-[#1a73e8] hover:bg-[#1557b0] text-white rounded-full transition-all duration-300"
+                >
+                  Start learning
+                </a>
+              </div>
             </div>
 
-            <div className="bg-gray-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 hover:shadow-lg transition-shadow">
-              <div className="text-gray-600 dark:text-gray-300 mb-4 text-2xl sm:text-3xl">🎓</div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
-                Campus Roadshows
-              </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
-                Share knowledge in different companies & colleges
-              </p>
+            {/* Join a community */}
+            <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-[#111827]/80">
+              <div className="relative h-[200px] overflow-hidden">
+                <Image
+                  src="/what-we-do/img3.jpg"
+                  alt="Join a community"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-0 right-0">
+                  <Image
+                    src="/icons/icon3.png"
+                    alt="Community icon"
+                    width={64}
+                    height={64}
+                    className="w-16 h-16"
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#1a73e8] dark:text-[#4285f4] mb-2">Join a community</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Meet a diverse network, no matter where you are on your developer journey.
+                </p>
+                <a
+                  href="https://gdg.community.dev/gdg-prayagraj/"
+                  className="inline-flex items-center px-6 py-2 bg-[#1a73e8] hover:bg-[#1557b0] text-white rounded-full transition-all duration-300"
+                >
+                  Explore communities
+                </a>
+              </div>
             </div>
 
-            <div className="bg-gray-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-2xl sm:rounded-3xl p-4 sm:p-6 hover:shadow-lg transition-shadow">
-              <div className="text-gray-600 dark:text-gray-300 mb-4 text-2xl sm:text-3xl">🎉</div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
-                Live Viewing Parties
-              </h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
-                Share knowledge in different Companies & colleges
-              </p>
+            {/* Learning and resources */}
+            <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-[#111827]/80">
+              <div className="relative h-[200px] overflow-hidden">
+                <Image
+                  src="/what-we-do/img4.jpg"
+                  alt="Learning and resources"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-0 right-0">
+                  <Image
+                    src="/icons/icon4.png"
+                    alt="Resources icon"
+                    width={64}
+                    height={64}
+                    className="w-16 h-16"
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[#1a73e8] dark:text-[#4285f4] mb-2">Learning and resources</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Access learning materials and developer resources.
+                </p>
+                <a
+                  href="/resources"
+                  className="inline-flex items-center px-6 py-2 bg-[#1a73e8] hover:bg-[#1557b0] text-white rounded-full transition-all duration-300"
+                >
+                  Explore resources
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -315,32 +409,30 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Become a Leader Section */}
+        {/* About GDG Prayagraj section */}
         <div className="mt-12 sm:mt-16">
-          <div className="max-w-3xl mb-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 lg:mb-6 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
-            About GDG Prayagraj
+          <div className="max-w-3xl mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
+              About GDG Prayagraj
             </h2>
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
-              Lead a Google Developer Group (GDG) and empower your local developer community. Before you start, check
-              the GDG Chapter Directory to see if a chapter already exists in your city or on your campus.
+              Get Involved! Become a Volunteer with Google Developer Group Prayagraj (GDG)
             </p>
           </div>
 
-          <div className="bg-gray-50/50 dark:bg-[#111827]/30 rounded-3xl p-6 sm:p-8 lg:p-12">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="bg-gray-50/50 dark:bg-[#111827]/30 rounded-3xl p-6">
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+              {/* Left side: Text + Button */}
               <div className="order-2 lg:order-1">
                 <div className="space-y-4">
                   <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
-                    If one does, reach out to the organizers through the chapter page and get involved. If there isn't a
-                    GDG near you, apply to start one!
+                  Google Developer Group Prayagraj (GDG Prayagraj) is a vibrant community for developers passionate about Google's technologies—from Android, App Engine, and Google Chrome to powerful APIs like Maps, YouTube, and Google Calendar.
                   </p>
+
                   <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300">
-                    Leading a GDG allows you to develop leadership skills, gain recognition, expand your network and
-                    collaborate with other passionate developers. You'll create a welcoming space for learning and
-                    growth, make a positive impact on the tech world, and access valuable resources.
+                    Looking for a way to connect with the tech world beyond! Join your Google Developer Group Prayagraj (GDG) as a volunteer! GDGs are communities for developers interested in Google's technologies, and they thrive with the help of passionate volunteers like you.
                   </p>
-                  <div className="pt-6">
+                  <div>
                     <a
                       href="https://docs.google.com/forms/d/e/1FAIpQLSdQk87g7fElElcZFZZKRWlP-i0k9gFCxRuFjvwAgObZndO75A/viewform"
                       target="_blank"
@@ -353,8 +445,9 @@ export default function Home() {
                 </div>
               </div>
 
+              {/* Right side: Video */}
               <div className="order-1 lg:order-2">
-                <div className="relative max-w-2xl mx-auto">
+                <div className="relative">
                   <div className="absolute -inset-3 border-4 border-[#34A853] rounded-3xl transform rotate-1"></div>
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white dark:bg-gray-800 shadow-2xl">
                     <YoutubeEmbed videoId="31A3MloRD8w" />
