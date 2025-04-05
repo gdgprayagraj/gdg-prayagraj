@@ -10,7 +10,7 @@ const CoreTeam = [
     color: "bg-blue-500",
     socials: {
       portfolio: "https://bit.ly/ankitone",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/ankit-kumar-verma-081804160/",
       github: "#",
     },
   },
@@ -61,7 +61,7 @@ const CoreTeam = [
     color: "bg-green-500",
     socials: {
       portfolio: "#",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/sarthak-singh-/",
       github: "#",
     },
   },
@@ -72,9 +72,9 @@ const CoreTeam = [
     imageUrl: "/core-team/avarti.jpg",
     color: "bg-indigo-500",
     socials: {
-      portfolio: "#",
-      linkedin: "#",
-      github: "#",
+      portfolio: "https://avartirastogi.wixsite.com/my-portfolio-2",
+      linkedin: "https://www.linkedin.com/in/avarti-rastogi/",
+      github: "https://github.com/Avartii",
     },
   },
   {
@@ -84,9 +84,9 @@ const CoreTeam = [
     imageUrl: "/core-team/anjali.jpeg",
     color: "bg-orange-500",
     socials: {
-      portfolio: "#",
-      linkedin: "#",
-      github: "#",
+      portfolio: "https://warm-lemon-znl7x7.mystrikingly.com",
+      linkedin: "https://www.linkedin.com/in/anjali-mishra-606b94241/",
+      github: "https://github.com/Anjali-mish",
     },
   },
   // {
