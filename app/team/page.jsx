@@ -11,7 +11,7 @@ const CoreTeam = [
     socials: {
       portfolio: "https://bit.ly/ankitone",
       linkedin: "https://www.linkedin.com/in/ankit-kumar-verma-081804160/",
-      github: "#",
+      github: "https://github.com/ankitgdg",
     },
   },
   {
