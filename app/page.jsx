@@ -471,11 +471,19 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 lg:mt-16">
             <a
-              href="https://medium.com/@adityakumar2019.ak/my-journey-road-to-wiki-wikiclub-tech-india-2d1a19dab521"
+              href="https://medium.com/@info2ankitkumarverma/automating-tasks-with-gemini-2-0-and-vertex-ai-1f9d77cc825b"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900"
             >
+              <div className="relative w-full h-48 mb-6 rounded-xl overflow-hidden">
+                <Image
+                  src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*df1exJizz-AL3SB4dHFPog.png"
+                  alt="WikiClub Tech India Journey"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
                   <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">📝</div>
@@ -485,10 +493,10 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                My Journey: Road to Wiki - WikiClub Tech India
+              Automating Tasks with Gemini 2.0 and Vertex AI
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
-                A personal journey through the WikiClub Tech India program and its impact on technical documentation.
+              This blog will walk you through practical ways to leverage these technologies for task automation, with real-world examples and easy-to-follow steps.
               </p>
               <div className="flex items-center justify-between">
                 <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
@@ -512,6 +520,14 @@ export default function Home() {
               rel="noopener noreferrer"
               className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900"
             >
+              <div className="relative w-full h-48 mb-6 rounded-xl overflow-hidden">
+                <Image
+                  src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-aYw7sGJfxM0x3XWN57M0g.png"
+                  alt="DevFest 2023 Experience"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
                   <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">🎯</div>
@@ -548,6 +564,14 @@ export default function Home() {
               rel="noopener noreferrer"
               className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900"
             >
+              <div className="relative w-full h-48 mb-6 rounded-xl overflow-hidden">
+                <Image
+                  src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*o1GSEkkWQfRQvL5NLgwZOg.png"
+                  alt="Getting Started with TensorFlow"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
               <div className="flex items-center gap-4 mb-6">
                 <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 p-3 rounded-xl">
                   <div className="text-2xl transform group-hover:scale-110 transition-transform duration-300">🤖</div>
