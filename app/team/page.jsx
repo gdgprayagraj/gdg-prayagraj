@@ -9,7 +9,7 @@ const CoreTeam = [
     imageUrl: "/core-team/ankit.jpeg",
     color: "bg-blue-500",
     socials: {
-      portfolio: "#",
+      portfolio: "https://bit.ly/ankitone",
       linkedin: "#",
       github: "#",
     },
@@ -89,18 +89,18 @@ const CoreTeam = [
       github: "#",
     },
   },
-  {
-    name: "Gauri Gupta",
-    role: "Core Team",
-    description: "Creating intuitive and beautiful user experiences.",
-    imageUrl: "/core-team/gauri.png",
-    color: "bg-pink-500",
-    socials: {
-      portfolio: "https://x.com/GauriGupta2131",
-      linkedin: "https://www.linkedin.com/in/gaurigaupta21",
-      github: "https://github.com/GauriGupta21",
-    },
-  },
+  // {
+  //   name: "Gauri Gupta",
+  //   role: "Core Team",
+  //   description: "Creating intuitive and beautiful user experiences.",
+  //   imageUrl: "/core-team/gauri.png",
+  //   color: "bg-pink-500",
+  //   socials: {
+  //     portfolio: "https://x.com/GauriGupta2131",
+  //     linkedin: "https://www.linkedin.com/in/gaurigaupta21",
+  //     github: "https://github.com/GauriGupta21",
+  //   },
+  // },
 ];
 
 const VolunteerTeam = [
