@@ -60,9 +60,9 @@ const CoreTeam = [
     imageUrl: "/core-team/sarthak.jpeg",
     color: "bg-green-500",
     socials: {
-      portfolio: "#",
+      portfolio: "N/A",
       linkedin: "https://www.linkedin.com/in/sarthak-singh-/",
-      github: "#",
+      github: "https://github.com/SarthakSingh2003",
     },
   },
   {
@@ -164,11 +164,11 @@ const VolunteerTeam = [
     role: "SIET",
     imageUrl: "/volunteers/harshit.jpg",
   },
-  {
-    name: "Anushka Singh",
-    role: "SIET",
-    imageUrl: "/volunteers/anushka.jpg",
-  },
+  // {
+  //   name: "Anushka Singh",
+  //   role: "SIET",
+  //   imageUrl: "/volunteers/anushka.jpg",
+  // },
   {
     name: "Purvi Malviya",
     role: "UCER",
@@ -178,6 +178,36 @@ const VolunteerTeam = [
     name: "Saumya Pratap Singh",
     role: "UCER",
     imageUrl: "/volunteers/saumya.jpg",
+  },
+  {
+    name: "Sakshi Rai",
+    role: "SHUATS",
+    imageUrl: "/volunteers/sakshi.jpg",
+  },
+  {
+    name: "Aditya Kumar Singh",
+    role: "UCER",
+    imageUrl: "/volunteers/aditya-kumar-singh.jpg",
+  },
+  {
+    name: "Rishabh Kumar",
+    role: "SIET",
+    imageUrl: "/volunteers/rishabh.jpg",
+  },
+  {
+    name: "Mansi Raghav",
+    role: "JKIAPT",
+    imageUrl: "/volunteers/mansi.jpg",
+  },
+  {
+    name: "Omendra Singh",
+    role: "JKIAPT",
+    imageUrl: "/volunteers/omendra.jpg",
+  },
+  {
+    name: "Priyanshu Rai",
+    role: "SIET",
+    imageUrl: "/volunteers/priyanshu.jpg",
   },
 ];
 
