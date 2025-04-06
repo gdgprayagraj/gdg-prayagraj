@@ -106,7 +106,7 @@ const CoreTeam = [
 const VolunteerTeam = [
   {
     name: "Anshuman Rai",
-    role: "United University",
+    role: "UU",
     imageUrl: "/volunteers/anshuman.jpg",
   },
   {
@@ -126,7 +126,7 @@ const VolunteerTeam = [
   },
   {
     name: "Sanskar Dubey",
-    role: "United University",
+    role: "UU",
     imageUrl: "/volunteers/sanskar.png",
   },
   {
@@ -164,11 +164,11 @@ const VolunteerTeam = [
     role: "SIET",
     imageUrl: "/volunteers/harshit.jpg",
   },
-  // {
-  //   name: "Anushka Singh",
-  //   role: "SIET",
-  //   imageUrl: "/volunteers/anushka.jpg",
-  // },
+  {
+    name: "Shreya Chaubey",
+    role: "JKIAPT",
+    imageUrl: "/volunteers/shreya.jpg",
+  },
   {
     name: "Purvi Malviya",
     role: "UCER",
@@ -209,6 +209,11 @@ const VolunteerTeam = [
     role: "SIET",
     imageUrl: "/volunteers/priyanshu.jpg",
   },
+  {
+    name: "Mohd Sadaab",
+    role: "UU",
+    imageUrl: "/volunteers/mohd-sadab.jpg",
+  }
 ];
 
 const AmbassadorTeam = [
@@ -236,6 +241,11 @@ const AmbassadorTeam = [
     name: "Anshuman Dwivedi",
     role: "REC Mirzapur",
     imageUrl: "/ambassadors/anshuman.jpg",
+  },
+  {
+    name: "Prajjwal Srivastava",
+    role: "REC Mirzapur",
+    imageUrl: "/ambassadors/prajjwal.png",
   }
 ];
 
