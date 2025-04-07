@@ -101,6 +101,30 @@ const CoreTeam = [
   //     github: "https://github.com/GauriGupta21",
   //   },
   // },
+  {
+    name: "Mohd Sadaab",
+    role: "Core Team",
+    description: "Implementing AI/ML solutions and leading workshops.",
+    imageUrl: "/core-team/mohd-sadab.jpg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "#",
+      linkedin: "#",
+      github: "#",
+    },
+  },
+  {
+    name: "Saumya Pratap Singh",
+    role: "Core Team",
+    description: "Implementing AI/ML solutions and leading workshops.",
+    imageUrl: "/core-team/saumya.jpg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "#",
+      linkedin: "#",
+      github: "#",
+    },
+  },
 ];
 
 const VolunteerTeam = [
@@ -170,11 +194,6 @@ const VolunteerTeam = [
     imageUrl: "/volunteers/purvi.jpg",
   },
   {
-    name: "Saumya Pratap Singh",
-    role: "UCER",
-    imageUrl: "/volunteers/saumya.jpg",
-  },
-  {
     name: "Sakshi Rai",
     role: "SHUATS",
     imageUrl: "/volunteers/sakshi.jpg",
@@ -204,11 +223,6 @@ const VolunteerTeam = [
     role: "SIET",
     imageUrl: "/volunteers/priyanshu.jpg",
   },
-  {
-    name: "Mohd Sadaab",
-    role: "UU",
-    imageUrl: "/volunteers/mohd-sadab.jpg",
-  }
 ];
 
 const AmbassadorTeam = [
