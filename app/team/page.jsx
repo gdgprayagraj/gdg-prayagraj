@@ -150,11 +150,6 @@ const VolunteerTeam = [
     imageUrl: "/volunteers/komal.jpg",
   },
   {
-    name: "Reeti Singh",
-    role: "UIT",
-    imageUrl: "/volunteers/reeti.jpg",
-  },
-  {
     name: "Ebenezer Rao",
     role: "SHUATS",
     imageUrl: "/volunteers/ebby.jpg",
@@ -246,6 +241,11 @@ const AmbassadorTeam = [
     name: "Prajjwal Srivastava",
     role: "REC Mirzapur",
     imageUrl: "/ambassadors/prajjwal.png",
+  },
+  {
+    name: "Reeti Singh",
+    role: "UIT",
+    imageUrl: "/ambassadors/reeti.jpg",
   }
 ];
 
