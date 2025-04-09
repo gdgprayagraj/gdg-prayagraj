@@ -89,18 +89,18 @@ const CoreTeam = [
       github: "https://github.com/Anjali-mish",
     },
   },
-  // {
-  //   name: "Gauri Gupta",
-  //   role: "Core Team",
-  //   description: "Creating intuitive and beautiful user experiences.",
-  //   imageUrl: "/core-team/gauri.png",
-  //   color: "bg-pink-500",
-  //   socials: {
-  //     portfolio: "https://x.com/GauriGupta2131",
-  //     linkedin: "https://www.linkedin.com/in/gaurigaupta21",
-  //     github: "https://github.com/GauriGupta21",
-  //   },
-  // },
+  {
+    name: "Gauri Gupta",
+    role: "Core Team",
+    description: "Creating intuitive and beautiful user experiences.",
+    imageUrl: "/core-team/gauri.png",
+    color: "bg-pink-500",
+    socials: {
+      portfolio: "https://x.com/GauriGupta2131",
+      linkedin: "https://www.linkedin.com/in/gaurigaupta21",
+      github: "https://github.com/GauriGupta21",
+    },
+  },
   {
     name: "Mohd Sadaab",
     role: "Core Team",
@@ -160,7 +160,7 @@ const VolunteerTeam = [
   },
   {
     name: "Faiz Khan",
-    role: "UIT",
+    role: "UCER",
     imageUrl: "/volunteers/faiz.jpg",
   },
   {
