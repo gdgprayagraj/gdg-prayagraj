@@ -4,20 +4,20 @@ import YoutubeEmbed from "@/components/YoutubeEmbed";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gradient-to-b dark:from-[#0B1120] dark:to-[#0A0F1C] font-['Google_Sans_Display']">
+    <div className="min-h-screen bg-gray-50 dark:bg-gradient-to-b dark:from-[#0B1120] dark:to-[#0A0F1C]">
       {/* Main container with consistent max-width and padding */}
       <main className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
         {/* Hero Section */}
         <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start">
           <div className="flex flex-col space-y-8">
             <div className="relative">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold transition-transform hover:scale-[1.02] duration-300 drop-shadow-sm leading-tight">
-                <div className="mb-1 animate-rainbow leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold transition-transform hover:scale-[1.02] duration-300 drop-shadow-sm">
+                <div className="mb-2 animate-rainbow">
                   Google Developer
                   <br />
                   Group
                 </div>
-                <div className="text-3xl sm:text-4xl lg:text-5xl mt-2 pb-4 animate-rainbow leading-tight">Prayagraj</div>
+                <div className="text-3xl sm:text-4xl lg:text-5xl mt-4 pb-8 animate-rainbow">Prayagraj</div>
               </h1>
             </div>
             <div className="relative">
