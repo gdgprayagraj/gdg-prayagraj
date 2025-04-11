@@ -5,7 +5,7 @@ const CoreTeam = [
     name: "Ankit Kumar Verma",
     role: "Organizer",
     description:
-      "Leading GDG Prayagraj with a passion for building an inclusive tech community.",
+      "Community and Open source",
     imageUrl: "/core-team/ankit.jpeg",
     color: "bg-blue-500",
     socials: {
@@ -44,7 +44,7 @@ const CoreTeam = [
     name: "Aditya Kumar",
     role: "Core Team",
     description:
-      "Frontend specialist focusing on responsive and accessible web applications.",
+      "Open Source Contributor and Java Developer with a strong interest in AI/ML.",
     imageUrl: "/core-team/aditya.jpg",
     color: "bg-purple-500",
     socials: {
@@ -56,7 +56,7 @@ const CoreTeam = [
   {
     name: "Sarthak Singh",
     role: "Core Team",
-    description: "Expert in cloud infrastructure and DevOps practices.",
+    description: "B.Tech CSE (AI & ML) student specializing in Artificial Intelligence, Machine Learning, and Android Development using Flutter and Dart.",
     imageUrl: "/core-team/sarthak.jpeg",
     color: "bg-green-500",
     socials: {
@@ -68,7 +68,7 @@ const CoreTeam = [
   {
     name: "Avarti Rastogi",
     role: "Core Team",
-    description: "Specializing in Android and cross-platform development.",
+    description: "Co-organizer of FlutterFlow Developer Group Prayagraj and WikiClub Tech Contributor and also Core member of GDG Prayagraj.",
     imageUrl: "/core-team/avarti.jpg",
     color: "bg-indigo-500",
     socials: {
@@ -80,7 +80,7 @@ const CoreTeam = [
   {
     name: "Anjali Mishra",
     role: "Core Team",
-    description: "Implementing AI/ML solutions and leading workshops.",
+    description: "Enthusiastic about machine learning with expertise in deep learning, AI, and web development.",
     imageUrl: "/core-team/anjali.jpeg",
     color: "bg-orange-500",
     socials: {
@@ -92,7 +92,7 @@ const CoreTeam = [
   {
     name: "Gauri Gupta",
     role: "Core Team",
-    description: "Creating intuitive and beautiful user experiences.",
+    description: "I am Software Developer at Impulsive Web, an member of the IMD-UG, Founder of WikiClub SIET, Outreach Lead at GDG Prayagraj.",
     imageUrl: "/core-team/gauri.png",
     color: "bg-pink-500",
     socials: {
