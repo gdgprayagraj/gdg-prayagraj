@@ -178,11 +178,11 @@ const VolunteerTeam = [
     role: "SHUATS",
     imageUrl: "/volunteers/ebby.jpg",
   },
-  {
-    name: "Harshit Kowsik",
-    role: "SIET",
-    imageUrl: "/volunteers/harshit.jpg",
-  },
+  // {
+  //   name: "Harshit Kowsik",
+  //   role: "SIET",
+  //   imageUrl: "/volunteers/harshit.jpg",
+  // },
   {
     name: "Shreya Chaubey",
     role: "JKIAPT",
