@@ -7,7 +7,7 @@ const faqs = [
     section: "About Us",
     question: "What is GDG Prayagraj?",
     answer:
-      "GDG Prayagraj (Google Developer Group Prayagraj) is a volunteer-run community for developers, students, and tech enthusiasts in the Prayagraj region who are interested in Google's developer technologies. This includes Android, Google Cloud Platform (GCP), Flutter, Firebase, Web technologies, AI/Machine Learning, and more. Our goal is to learn, share knowledge, and network together.",
+      "GDG Prayagraj is a community for developers, students, and tech enthusiasts."
   },
   {
     section: "About Us",
@@ -19,32 +19,32 @@ const faqs = [
     section: "About Us",
     question: "What's the relationship between GDG and TFUG Prayagraj?",
     answer:
-      "While both are community groups supported by Google, GDG Prayagraj has a broader focus across various Google technologies, whereas TFUG Prayagraj specializes specifically in TensorFlow and AI/ML. We often collaborate and share resources, representing different facets of the Google developer ecosystem in Prayagraj. Both are run by local volunteers.",
-  },
-  {
-    section: "About Us",
-    question: "How are GDG Prayagraj and TFUG Prayagraj different from other tech communities or college clubs in Prayagraj?",
-    answer:
-      "Prayagraj has a growing tech scene with various college clubs and communities! GDG Prayagraj focuses broadly on Google developer technologies (Cloud, Android, Web, AI, etc.), while TFUG Prayagraj specializes in TensorFlow and AI/ML. Both are part of global networks supported by Google, offering access to structured learning programs and potential connections with Google experts. We aim to connect students, professionals, and enthusiasts in an open, volunteer-run environment focused on learning and sharing, complementing the activities of university-specific clubs or other local groups.",
+      "While both are community groups supported by Google, GDG Prayagraj has a broader focus across various Google technologies, whereas TFUG Prayagraj specializes specifically in TensorFlow and AI/ML. We often collaborate and share resources, representing different facets of the Google developer ecosystem in Prayagraj and Beyond.",
   },
   {
     section: "About Us",
     question: "Who can join?",
     answer:
-      "Anyone interested in technology is welcome! Whether you're a student, a professional developer, a designer, a beginner curious about tech, or an expert in your field, you're invited to join our community and events.",
+      "Anyone interested in technology is welcome! Whether you're a student, a professional developer, a designer, a beginner curious about tech, or an expert in your field, you're invited to join our community and events."
   },
   // Membership & Events
   {
     section: "Membership & Events",
     question: "How do I become a member? Is there a cost?",
     answer:
-      "Membership is completely free! The best way to join and stay updated is by becoming a member on our official GDG Community Platform and/or our Meetup page. [Insert links here]",
+      "Membership is completely free! The best way to join and stay updated is by becoming a member on our official GDG Community Platform and our Meetup page.",
+    links: [
+      { label: "GDG Prayagraj Community Platform", url: "https://gdg.community.dev/gdg-prayagraj/" }
+    ]
   },
   {
     section: "Membership & Events",
     question: "How can I find out about upcoming events?",
     answer:
-      "We announce all our events primarily on our Meetup page. You can also follow us on social media for updates. [Insert links here]",
+      "We announce all our events primarily on our Meetup page. You can also follow us on social media for updates",
+    links: [
+      { label: "GDG Prayagraj Community Platform", url: "https://gdg.community.dev/gdg-prayagraj/"}
+    ]
   },
   {
     section: "Membership & Events",
@@ -75,37 +75,52 @@ const faqs = [
     section: "Code of Conduct",
     question: "What are the community guidelines or Code of Conduct for participating in GDG/TFUG Prayagraj events?",
     answer:
-      "We are committed to providing a welcoming, respectful, inclusive, and harassment-free experience for everyone. All attendees, speakers, sponsors, and volunteers at our events are required to agree with and adhere to our Code of Conduct. You can find the full Code of Conduct here: [Insert CoC link here]",
+      "We are committed to providing a welcoming, respectful, inclusive, and harassment-free experience for everyone. All attendees, speakers, sponsors, and volunteers at our events are required to agree with and adhere to our Code of Conduct. You can find the full Code of Conduct here:",
+    links: [
+      { label: "GDG Prayagraj Code of Conduct", url: "/code-of-conduct" }
+    ]
   },
   // Getting Involved
   {
     section: "Getting Involved",
     question: "How can I volunteer for events?",
     answer:
-      "We love community participation! We periodically put out calls for volunteers for specific events via our Meetup page and social channels. You can also express your interest by contacting the organizers directly. [Insert contact link here]",
+      "We love community participation! We periodically put out calls for volunteers for specific events via our Meetup page and social channels. You can also express your interest by contacting the organizers directly.",
+    links: [
+      { label: "Volunteer Form", url: "https://docs.google.com/forms/d/e/1FAIpQLSdQk87g7fElElcZFZZKRWlP-i0k9gFCxRuFjvwAgObZndO75A/viewform" }
+    ]
   },
   {
     section: "Getting Involved",
     question: "How can I become a speaker?",
     answer:
-      "If you have expertise in a relevant technology and would like to share your knowledge, we'd love to hear from you! Please reach out to the organizing team with your topic idea. [Insert speaker proposal/contact link here]",
+      "If you have expertise in a relevant technology and would like to share your knowledge, we'd love to hear from you! Please reach out to the organizing team with your topic idea.",
+      links: [
+        { label: "Contact for Enroll as Speaker", url: "mailto: gdgprayag@gmail.com" }
+      ]
   },
   {
     section: "Getting Involved",
-    question: "Can my company sponsor GDG/TFUG Prayagraj?",
+    question: "Can my company sponsor GDG/TFUG Prayagraj Event?",
     answer:
-      "Yes! We welcome support from local and national companies. Sponsorship helps us organize more impactful events. Please contact us to discuss opportunities. [Insert sponsorship contact link here]",
+      "Yes! We welcome support from local and national companies. Sponsorship helps us organize more impactful events. Please contact us to discuss opportunities. https://gdg.community.dev/gdg-prayagraj/",
+      links: [
+        { label: "Visit here", url: "mailto: gdgprayag@gmail.com" }
+      ]
   },
   {
     section: "Getting Involved",
     question: "I have an idea for an event or collaboration. Who do I talk to?",
     answer:
-      "We're always open to new ideas! Please get in touch with the organizing team to share your thoughts. [Insert contact link here]",
+      "We're always open to new ideas! Please get in touch with the organizing team to share your thoughts",
+      links: [
+        { label: "Contact here", url: "mailto: gdgprayag@gmail.com" }
+      ]
   },
   // Community Landscape
   {
     section: "Community Landscape",
-    question: "What other tech communities like GDG, TFUG, or FFDG exist in Uttar Pradesh?",
+    question: "What other tech communities exist in Uttar Pradesh?",
     answer:
       "Uttar Pradesh has a vibrant and expanding tech community ecosystem! Besides GDG & TFUG Prayagraj, you can find other GDG and TFUG chapters, Google Developer Student Clubs (GDSCs), specialized groups like FFDG Prayagraj, university-specific clubs, and startup/incubator communities. We often collaborate with other communities and encourage exploring the diverse opportunities available across UP!",
   },
@@ -137,7 +152,7 @@ export default function FAQPage() {
         <div className="space-y-16">
           {Object.entries(groupedFaqs).map(([section, faqs]) => (
             <div key={section}>
-              <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-500 to-pink-500 dark:from-purple-300 dark:via-blue-200 dark:to-pink-300">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-blue-500 to-pink-500 dark:from-purple-300 dark:via-blue-200 dark:to-pink-300">
                 {section}
               </h2>
               <div className="space-y-6">
@@ -174,6 +189,22 @@ export default function FAQPage() {
                           style={{ transition: 'opacity 0.4s' }}
                         >
                           {faq.answer}
+                          {faq.links && faq.links.length > 0 && (
+                            <div className="mt-3 space-y-1">
+                              {faq.links.map((link, i) => (
+                                <div key={i}>
+                                  <a
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block text-purple-600 font-semibold underline hover:text-blue-600 transition-colors duration-200"
+                                  >
+                                    {link.label}
+                                  </a>
+                                </div>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
