@@ -470,6 +470,8 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8 lg:mt-16">
+
+            {/* Automating Tasks with Gemini 2.0 and Vertex AI */}
             <a
               href="https://medium.com/@info2ankitkumarverma/automating-tasks-with-gemini-2-0-and-vertex-ai-1f9d77cc825b"
               target="_blank"
@@ -514,6 +516,7 @@ export default function Home() {
               </div>
             </a>
 
+            {/* My First DevFest: A Volunteer's Experience */}  
             <a
               href="https://medium.com/@adityakumar2019.ak/my-first-devfest-a-volunteers-experience-at-devfest-2023-prayagraj-232035102743"
               target="_blank"
@@ -558,16 +561,17 @@ export default function Home() {
               </div>
             </a>
 
+            {/* Unmasking Fakes with Machine Learning — Kaggle Community Olympiad */}
             <a
-              href="https://medium.com/@info2ankitkumarverma/getting-started-with-tensorflow-a-guide-for-beginners-591287bfeb52"
+              href="https://medium.com/@mohdshadabunited/unmasking-fakes-with-machine-learning-kaggle-community-olympiad-420a604aff91"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-gradient-to-br from-white to-gray-50 dark:from-[#111827]/80 dark:to-[#1F2937]/80 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-blue-100 dark:hover:border-blue-900"
             >
               <div className="relative w-full h-48 mb-6 rounded-xl overflow-hidden">
                 <Image
-                  src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*o1GSEkkWQfRQvL5NLgwZOg.png"
-                  alt="Getting Started with TensorFlow"
+                  src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*0snMbElyy2Ieo4Wy9OF2rg.png"
+                  alt="Unmasking Fakes with Machine Learning — Kaggle Community Olympiad"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -581,10 +585,10 @@ export default function Home() {
                 </span>
               </div>
               <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                Getting Started with TensorFlow
+                Unmasking Fakes with Machine Learning — Kaggle Community Olympiad
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 line-clamp-3">
-                A comprehensive guide for beginners to start their journey with TensorFlow.
+                Building a machine learning model that classifies political statements as true or false?...
               </p>
               <div className="flex items-center justify-between">
                 <div className="flex items-center text-sm text-blue-600 dark:text-blue-400 font-medium">
@@ -598,9 +602,11 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
-                <span className="text-xs text-gray-500 dark:text-gray-400">10 min read</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">4 min read</span>
               </div>
             </a>
+            {/*End Here*/}
+
           </div>
 
           <div className="flex justify-center mt-12">
