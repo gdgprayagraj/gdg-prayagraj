@@ -18,6 +18,12 @@ const nextConfig = {
 				port: '',
 				pathname: '/**',
 			},
+			{
+				protocol: "https",
+				hostname: "media2.dev.to",
+				port: '',
+				pathname: '/**',
+			}
 		],
 	},
 };

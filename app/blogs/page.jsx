@@ -24,6 +24,26 @@ export default function Blogs() {
       image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-aYw7sGJfxM0x3XWN57M0g.png"
     },
     {
+      title: "Unmasking Fakes with Machine Learning — Kaggle Community Olympiad",
+      author: "Mohd Shadab",
+      date: "May 29, 2025",
+      readTime: "4 min read",
+      category: "Community",
+      description: "Building a machine learning model that classifies political statements as true or false?...",
+      link: "https://medium.com/@mohdshadabunited/unmasking-fakes-with-machine-learning-kaggle-community-olympiad-420a604aff91",
+      image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*0snMbElyy2Ieo4Wy9OF2rg.png"
+    },
+    {
+      title: "From Firebase to Funny Poses: My Day at the Build with AI Event",
+      author: "Mohd Shadab",
+      date: "May 27, 2025",
+      readTime: "4 min read",
+      category: "Firebase",
+      description: "Last Month, I had the pleasure of attending the “Build with AI” event organized by GDG Prayagraj, and honestly?...",
+      link: "https://dev.to/mohd_shadab_dev/from-firebase-to-funny-poses-my-day-at-the-build-with-ai-event-3nik",
+      image: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2dl4xhl7vsxex8ygldu1.jpg"
+    },
+    {
       title: "Getting Started with TensorFlow",
       author: "Ankit Kumar Verma",
       date: "Feb 28, 2024",
