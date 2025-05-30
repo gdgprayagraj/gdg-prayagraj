@@ -106,9 +106,9 @@ const CoreTeam = [
     },
   },
   {
-    name: "Mohd Sadaab",
+    name: "Mohd Sahadab",
     role: "Core Team",
-    description: "Implementing AI/ML solutions and leading workshops.",
+    description: "MERN Stack Developer & Machine Learning Practitioner.",
     imageUrl: "/core-team/mohd-sadab.jpg",
     color: "bg-orange-500",
     socials: {
