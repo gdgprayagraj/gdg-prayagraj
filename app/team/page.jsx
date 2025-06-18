@@ -106,7 +106,7 @@ const CoreTeam = [
     },
   },
   {
-    name: "Mohd Sahadab",
+    name: "Mohd Shadab",
     role: "Core Team",
     description: "MERN Stack Developer & Machine Learning Practitioner.",
     imageUrl: "/core-team/mohd-sadab.jpg",
@@ -236,7 +236,17 @@ const VolunteerTeam = [
     name: "Shivaansh",
     role: "UIT",
     imageUrl: "/volunteers/shivaansh_uit.jpg",
-  }
+  },
+  {
+    name: "Ayushi Srivastava",
+    role: "UCER",
+    imageUrl: "/volunteers/ayushi.jpg",
+  },
+  {
+    name: "Ayush Singh",
+    role: "UCER",
+    imageUrl: "/volunteers/ayush.jpg",
+  },
 ];
 
 const AmbassadorTeam = [
