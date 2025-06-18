@@ -243,7 +243,7 @@ const VolunteerTeam = [
     imageUrl: "/volunteers/ayushi.jpg",
   },
   {
-    name: "Ayush Singh",
+    name: "Ayush Tripathi",
     role: "UCER",
     imageUrl: "/volunteers/ayush.jpg",
   },
