@@ -96,7 +96,7 @@ const CoreTeam = [
   {
     name: "Gauri Gupta",
     role: "Core Team",
-    description: "I am Software Developer at Impulsive Web, an member of the IMD-UG, Founder of WikiClub SIET, Outreach Lead at GDG Prayagraj.",
+    description: "I am Software Developer at Impulsive Web, an member of the IMD-UG.",
     imageUrl: "/core-team/gauri.png",
     color: "bg-pink-500",
     socials: {
@@ -247,11 +247,16 @@ const VolunteerTeam = [
     role: "UCER",
     imageUrl: "/volunteers/ayush.jpg",
   },
+  {
+    name: "Zaid Sayyed",
+    role: "United University",
+    imageUrl: "/volunteers/zaid.jpg",
+  }
 ];
 
 const AmbassadorTeam = [
   {
-    name: "Shivansh Mishrai",
+    name: "Shivansh Mishra",
     role: "REC Mirzapur",
     imageUrl: "/ambassadors/shivansh.jpg",
   },
