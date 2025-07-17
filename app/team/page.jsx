@@ -251,7 +251,12 @@ const VolunteerTeam = [
     name: "Zaid Sayyed",
     role: "United University",
     imageUrl: "/volunteers/zaid.jpg",
-  }
+  },
+  {
+    name: "AKASH KUMAR",
+    role: "United University",
+    imageUrl: "/volunteers/akshay.jpg",
+  },
 ];
 
 const AmbassadorTeam = [
