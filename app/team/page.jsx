@@ -257,6 +257,11 @@ const VolunteerTeam = [
     role: "United University",
     imageUrl: "/volunteers/akshay.jpg",
   },
+  {
+    name: "Priyankar Shukla",
+    role: "CMP Degree College",
+    imageUrl: "/volunteers/priyankar.png",
+  },
 ];
 
 const AmbassadorTeam = [
