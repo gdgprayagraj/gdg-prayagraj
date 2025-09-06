@@ -37,9 +37,17 @@ export function Modal({ isOpen, onClose, member }) {
             <p className="text-[#4285F4] dark:text-blue-400 font-medium mb-4">
               {member.role}
             </p>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              {member.description}
-            </p>
+            <p 
+              className="text-gray-600 dark:text-gray-300 mb-6"
+              dangerouslySetInnerHTML={{
+                __html: member.links?.englishLearners 
+                  ? member.description.replace(
+                      "English Learners",
+                      `<a href="${member.links.englishLearners}" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline font-medium">English Learners</a>`
+                    )
+                  : member.description
+              }}
+            />
             
             {member.socials && (
               <div className="flex gap-4">

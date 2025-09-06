@@ -48,7 +48,7 @@ const CoreTeam = [
     name: "Aditya Kumar",
     role: "Core Team",
     description:
-      "Open Source Contributor and Java Developer with a strong interest in AI/ML.",
+      "Full Stack Developer, Open Source Contributor, CTO @English Learners.",
     imageUrl: "/core-team/aditya.jpg",
     color: "bg-purple-500",
     socials: {
@@ -56,6 +56,9 @@ const CoreTeam = [
       linkedin: "https://www.linkedin.com/in/aditya0545",
       github: "https://github.com/aditya0545",
     },
+    links: {
+      englishLearners: "https://englishlearners.eu.org"
+    }
   },
   {
     name: "Sarthak Singh",
@@ -261,6 +264,26 @@ const VolunteerTeam = [
     name: "Priyankar Shukla",
     role: "CMP Degree College",
     imageUrl: "/volunteers/priyankar.png",
+  },
+  {
+    name: "Manvi Kesarwani",
+    role: "UIT",
+    imageUrl: "/volunteers/manvi.jpg",
+  },
+  {
+    name: "Pushpak Tiwari",
+    role: "UCER",
+    imageUrl: "/volunteers/pushpak.jpg",
+  },
+  {
+    name: "Shreshth Srivastava",
+    role: "United University",
+    imageUrl: "/volunteers/shreshth.jpg",
+  },
+  {
+    name: "Muskan Singh",
+    role: "United University",
+    imageUrl: "/volunteers/muskan.jpg",
   },
 ];
 
