@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import YoutubeEmbed from "@/components/YoutubeEmbed";
+import CounterAnimation from "@/components/CounterAnimation";
 
 export default function Home() {
   return (
@@ -49,25 +50,45 @@ export default function Home() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-8 mt-12 sm:mt-16">
           <div className="p-3 sm:p-4 lg:p-6 rounded-lg bg-blue-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm">
             <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
-              20+
+              <CounterAnimation 
+                target={20} 
+                suffix="+" 
+                duration={2000}
+                className="text-xl sm:text-2xl lg:text-4xl font-bold text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200"
+              />
             </h3>
             <p className="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-300">Speakers</p>
           </div>
           <div className="p-3 sm:p-4 lg:p-6 rounded-lg bg-pink-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm">
             <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
-              13+
+              <CounterAnimation 
+                target={13} 
+                suffix="+" 
+                duration={2000}
+                className="text-xl sm:text-2xl lg:text-4xl font-bold text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200"
+              />
             </h3>
             <p className="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-300">Sessions</p>
           </div>
           <div className="p-3 sm:p-4 lg:p-6 rounded-lg bg-green-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm">
             <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
-              2000+
+              <CounterAnimation 
+                target={2000} 
+                suffix="+" 
+                duration={2500}
+                className="text-xl sm:text-2xl lg:text-4xl font-bold text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200"
+              />
             </h3>
             <p className="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-300">Participants</p>
           </div>
           <div className="p-3 sm:p-4 lg:p-6 rounded-lg bg-yellow-50 dark:bg-[#111827]/80 dark:backdrop-blur-sm">
             <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
-              5+
+              <CounterAnimation 
+                target={5} 
+                suffix="+" 
+                duration={1500}
+                className="text-xl sm:text-2xl lg:text-4xl font-bold text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200"
+              />
             </h3>
             <p className="text-xs sm:text-sm lg:text-base text-gray-600 dark:text-gray-300">Workshops</p>
           </div>
