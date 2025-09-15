@@ -48,7 +48,7 @@ const CoreTeam = [
     name: "Aditya Kumar",
     role: "Core Team",
     description:
-      "Full Stack Developer, Open Source Contributor, CTO @English Learners.",
+      "Full Stack Developer, Open Source Contributor, CTO(Volunteer) @English Learners.",
     imageUrl: "/core-team/aditya.jpg",
     color: "bg-purple-500",
     socials: {
@@ -97,34 +97,10 @@ const CoreTeam = [
     },
   },
   {
-    name: "Gauri Gupta",
-    role: "Core Team",
-    description: "I am Software Developer at Impulsive Web, an member of the IMD-UG.",
-    imageUrl: "/core-team/gauri.png",
-    color: "bg-pink-500",
-    socials: {
-      portfolio: "https://x.com/GauriGupta2131",
-      linkedin: "https://www.linkedin.com/in/gaurigaupta21",
-      github: "https://github.com/GauriGupta21",
-    },
-  },
-  {
     name: "Mohd Shadab",
     role: "Core Team",
     description: "MERN Stack Developer & Machine Learning Practitioner.",
     imageUrl: "/core-team/mohd-sadab.jpg",
-    color: "bg-orange-500",
-    socials: {
-      portfolio: "#",
-      linkedin: "#",
-      github: "#",
-    },
-  },
-  {
-    name: "Saumya Pratap Singh",
-    role: "Core Team",
-    description: "Implementing AI/ML solutions and leading workshops.",
-    imageUrl: "/core-team/saumya.jpg",
     color: "bg-orange-500",
     socials: {
       portfolio: "#",
@@ -282,7 +258,7 @@ const VolunteerTeam = [
   },
   {
     name: "Muskan Singh",
-    role: "United University",
+    role: "UIT",
     imageUrl: "/volunteers/muskan.jpg",
   },
 ];
