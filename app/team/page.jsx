@@ -36,7 +36,7 @@ const CoreTeam = [
     role: "Core Team (Technical)",
     description:
       "Specializes in secur and high-performance systems in DevOps and modern Web Technologies.",
-    imageUrl: "/core-team/agamya.jpg",
+    imageUrl: "/core-team/agamya.png",
     color: "bg-yellow-500",
     socials: {
       portfolio: "https://agamya.dev/",
