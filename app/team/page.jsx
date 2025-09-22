@@ -35,7 +35,7 @@ const CoreTeam = [
     name: "Agamya Samuel",
     role: "Core Team (Technical)",
     description:
-      "Specializes in secur and high-performance systems in DevOps and modern Web Technologies.",
+      "Open Source Mentor | Specializes in secure, high-performance systems using DevOps and modern Web Technologies.",
     imageUrl: "/core-team/agamya.png",
     color: "bg-yellow-500",
     socials: {
