@@ -108,14 +108,21 @@ const CoreTeam = [
       github: "#",
     },
   },
+  {
+    name: "Anshuman Rai",
+    role: "Core Team",
+    description: "MERN Stack Developer & Machine Learning Practitioner.",
+    imageUrl: "/core-team/anshuman.jpg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "#",
+      linkedin: "#",
+      github: "#",
+    },
+  },
 ];
 
 const VolunteerTeam = [
-  {
-    name: "Anshuman Rai",
-    role: "UU",
-    imageUrl: "/volunteers/anshuman.jpg",
-  },
   {
     name: "Harsh Kushwaha",
     role: "SHUATS",
