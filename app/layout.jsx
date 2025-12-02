@@ -94,6 +94,12 @@ export default function RootLayout({ children }) {
                   >
                     FAQ
                   </Link>
+                  <Link
+                    href="/privacy-policy"
+                    className="text-sm font-semibold text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors"
+                  >
+                    Privacy Policy
+                  </Link>
                   <ModeToggle />
                 </div>
 

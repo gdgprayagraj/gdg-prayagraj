@@ -81,6 +81,13 @@ export function MobileNav() {
           >
             FAQ
           </Link>
+          <Link
+            href="/privacy-policy"
+            className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-[#1E293B]"
+            onClick={() => setIsOpen(false)}
+          >
+            Privacy Policy
+          </Link>
           <div className="px-4 py-2">
             <ModeToggle />
           </div>
