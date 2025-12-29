@@ -120,6 +120,18 @@ const CoreTeam = [
       github: "#",
     },
   },
+  {
+    name: "Mahin Farooqui",
+    role: "Core Team",
+    description: "",
+    imageUrl: "/core-team/Mahin Farooqui.jpg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "#",
+      linkedin: "#",
+      github: "#",
+    },
+  }
 ];
 
 const VolunteerTeam = [
@@ -168,11 +180,6 @@ const VolunteerTeam = [
     role: "SHUATS",
     imageUrl: "/volunteers/ebby.jpg",
   },
-  // {
-  //   name: "Harshit Kowsik",
-  //   role: "SIET",
-  //   imageUrl: "/volunteers/harshit.jpg",
-  // },
   {
     name: "Shreya Chaubey",
     role: "JKIAPT",
@@ -267,6 +274,21 @@ const VolunteerTeam = [
     name: "Muskan Singh",
     role: "UIT",
     imageUrl: "/volunteers/muskan.jpg",
+  },
+  {
+    name: "Sakshi Pandey",
+    role: "United University",
+    imageUrl: "/volunteers/Sakshi Pandey.jpg",
+  },
+  {
+    name: "Syed Sohrab Haider Rizvi",
+    role: "United University",
+    imageUrl: "/volunteers/Sohrab Rizvi.jpg",
+  },
+  {
+    name: "Paridhi Singh",
+    role: "UCER",
+    imageUrl: "/volunteers/Paridhi Singh.jpg",
   },
 ];
 
