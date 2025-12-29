@@ -119,18 +119,6 @@ const CoreTeam = [
       linkedin: "#",
       github: "#",
     },
-  },
-  {
-    name: "Mahin Farooqui",
-    role: "Core Team",
-    description: "",
-    imageUrl: "/core-team/Mahin Farooqui.jpg",
-    color: "bg-orange-500",
-    socials: {
-      portfolio: "#",
-      linkedin: "#",
-      github: "#",
-    },
   }
 ];
 
@@ -290,6 +278,11 @@ const VolunteerTeam = [
     role: "UCER",
     imageUrl: "/volunteers/Paridhi Singh.jpg",
   },
+  {
+    name: "Mahin Farooqui",
+    role: "United University",
+    imageUrl: "/volunteers/Mahin Farooqui.jpg",
+  }
 ];
 
 const AmbassadorTeam = [
