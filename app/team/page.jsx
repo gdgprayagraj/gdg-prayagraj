@@ -119,6 +119,18 @@ const CoreTeam = [
       linkedin: "#",
       github: "#",
     },
+  },
+  {
+    name: "Pushpak Tiwari",
+    role: "Core Team",
+    description: "B.Tech AIML student interested in AI, web technologies and hands-on problem solving through real-world projects.",
+    imageUrl: "/core-team/pushpak.jpg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "https://www.pushpaktiwari.tech/",
+      linkedin: "https://www.linkedin.com/in/pushpaktiwari/",
+      github: "https://github.com/pushpaktiwarii",
+    },
   }
 ];
 
