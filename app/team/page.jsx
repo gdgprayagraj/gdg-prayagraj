@@ -180,11 +180,11 @@ const VolunteerTeam = [
     role: "SHUATS",
     imageUrl: "/volunteers/ebby.jpg",
   },
-  {
-    name: "Shreya Chaubey",
-    role: "JKIAPT",
-    imageUrl: "/volunteers/shreya.jpg",
-  },
+  // {
+  //   name: "Shreya Chaubey",
+  //   role: "JKIAPT",
+  //   imageUrl: "/volunteers/shreya.jpg",
+  // },
   {
     name: "Purvi Malviya",
     role: "UCER",
@@ -201,19 +201,9 @@ const VolunteerTeam = [
     imageUrl: "/volunteers/aditya-kumar-singh.jpg",
   },
   {
-    name: "Rishabh Kumar",
-    role: "SIET",
-    imageUrl: "/volunteers/rishabh.jpg",
-  },
-  {
     name: "Mansi Raghav",
     role: "JKIAPT",
     imageUrl: "/volunteers/mansi.jpg",
-  },
-  {
-    name: "Omendra Singh",
-    role: "JKIAPT",
-    imageUrl: "/volunteers/omendra.jpg",
   },
   {
     name: "Priyanshu Rai",
@@ -259,11 +249,6 @@ const VolunteerTeam = [
     name: "Manvi Kesarwani",
     role: "UIT",
     imageUrl: "/volunteers/manvi.jpg",
-  },
-  {
-    name: "Pushpak Tiwari",
-    role: "UCER",
-    imageUrl: "/volunteers/pushpak.jpg",
   },
   {
     name: "Shreshth Srivastava",
