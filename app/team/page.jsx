@@ -131,6 +131,18 @@ const CoreTeam = [
       linkedin: "https://www.linkedin.com/in/pushpaktiwari/",
       github: "https://github.com/pushpaktiwarii",
     },
+  },
+    {
+    name: "Ebenezer Rao",
+    role: "Core Team",
+    description: "B.Tech AIML student interested in AI, web technologies and hands-on problem solving through real-world projects.",
+    imageUrl: "/core-team/ebby.jpg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "",
+      linkedin: "",
+      github: "",
+    },
   }
 ];
 
@@ -174,11 +186,6 @@ const VolunteerTeam = [
     name: "Komal Pandey",
     role: "SIET",
     imageUrl: "/volunteers/komal.jpg",
-  },
-  {
-    name: "Ebenezer Rao",
-    role: "SHUATS",
-    imageUrl: "/volunteers/ebby.jpg",
   },
   // {
   //   name: "Shreya Chaubey",
