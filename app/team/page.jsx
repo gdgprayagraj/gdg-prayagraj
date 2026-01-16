@@ -115,9 +115,9 @@ const CoreTeam = [
     imageUrl: "/core-team/anshuman.jpg",
     color: "bg-orange-500",
     socials: {
-      portfolio: "#",
-      linkedin: "#",
-      github: "#",
+      portfolio: "https://portfolio-aka-pied.vercel.app/",
+      linkedin: "https://www.linkedin.com/in/anshuman-rai-0433032b9/",
+      github: "https://github.com/Anshuman-Rai-1004",
     },
   },
   {
@@ -142,6 +142,18 @@ const CoreTeam = [
       portfolio: "",
       linkedin: "",
       github: "",
+    },
+  },
+  {
+    name: "Reeti ",
+    role: "Core Team",
+    description: "Open Source & Leadership | Solving real world problems.",
+    imageUrl: "/core-team/reeti.jpg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "",
+      linkedin: "https://www.linkedin.com/in/reeti-singh-09748b291/",
+      github: "https://github.com/Reeti14",
     },
   }
 ];
@@ -216,11 +228,6 @@ const VolunteerTeam = [
     name: "Priyanshu Rai",
     role: "SIET",
     imageUrl: "/volunteers/priyanshu.jpg",
-  },
-  {
-    name: "Reeti Singh",
-    role: "UIT",
-    imageUrl: "/volunteers/reeti.jpg",
   },
   {
     name: "Shivaansh",
