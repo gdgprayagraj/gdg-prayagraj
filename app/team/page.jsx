@@ -185,11 +185,6 @@ const VolunteerTeam = [
     imageUrl: "/volunteers/shweta.jpg",
   },
   {
-    name: "Faiz Khan",
-    role: "UCER",
-    imageUrl: "/volunteers/faiz.jpg",
-  },
-  {
     name: "Abhishek Ojha",
     role: "SIET",
     imageUrl: "/volunteers/abhishek.jpg",
@@ -205,29 +200,14 @@ const VolunteerTeam = [
   //   imageUrl: "/volunteers/shreya.jpg",
   // },
   {
-    name: "Purvi Malviya",
-    role: "UCER",
-    imageUrl: "/volunteers/purvi.jpg",
-  },
-  {
     name: "Sakshi Rai",
     role: "SHUATS",
     imageUrl: "/volunteers/sakshi.jpg",
   },
   {
-    name: "Aditya Kumar Singh",
-    role: "UCER",
-    imageUrl: "/volunteers/aditya-kumar-singh.jpg",
-  },
-  {
     name: "Mansi Raghav",
     role: "JKIAPT",
     imageUrl: "/volunteers/mansi.jpg",
-  },
-  {
-    name: "Priyanshu Rai",
-    role: "SIET",
-    imageUrl: "/volunteers/priyanshu.jpg",
   },
   {
     name: "Shivaansh",
@@ -245,16 +225,6 @@ const VolunteerTeam = [
     imageUrl: "/volunteers/ayush.jpg",
   },
   {
-    name: "Zaid Sayyed",
-    role: "United University",
-    imageUrl: "/volunteers/zaid.jpg",
-  },
-  {
-    name: "AKASH KUMAR",
-    role: "United University",
-    imageUrl: "/volunteers/akshay.jpg",
-  },
-  {
     name: "Priyankar Shukla",
     role: "CMP Degree College",
     imageUrl: "/volunteers/priyankar.png",
@@ -268,11 +238,6 @@ const VolunteerTeam = [
     name: "Shreshth Srivastava",
     role: "United University",
     imageUrl: "/volunteers/shreshth.jpg",
-  },
-  {
-    name: "Muskan Singh",
-    role: "UIT",
-    imageUrl: "/volunteers/muskan.jpg",
   },
   {
     name: "Sakshi Pandey",
