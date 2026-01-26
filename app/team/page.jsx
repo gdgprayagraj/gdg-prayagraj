@@ -205,11 +205,6 @@ const VolunteerTeam = [
     imageUrl: "/volunteers/sakshi.jpg",
   },
   {
-    name: "Mansi Raghav",
-    role: "JKIAPT",
-    imageUrl: "/volunteers/mansi.jpg",
-  },
-  {
     name: "Shivaansh",
     role: "UIT",
     imageUrl: "/volunteers/shivaansh_uit.jpg",
