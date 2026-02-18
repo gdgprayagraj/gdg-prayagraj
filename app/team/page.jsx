@@ -253,7 +253,57 @@ const VolunteerTeam = [
     name: "Mahin Farooqui",
     role: "United University",
     imageUrl: "/volunteers/Mahin Farooqui.jpg",
-  }
+  },
+  {
+    name: "Kavaljeet Singh",
+    role: "United University",
+    imageUrl: "/volunteers/KAVALJEET SINGH.png",
+  },
+  {
+    name: "Shubhangi Shukla",
+    role: "UIT",
+    imageUrl: "/volunteers/Shubhangi Shukla.jpg",
+  },
+  {
+    name: "Shivansh Mishra",
+    role: "REC Mirzapur",
+    imageUrl: "/volunteers/Shivansh Mishra.jpg",
+  },
+  {
+    name: "Aryan Dubey",
+    role: "University of Allahabad",
+    imageUrl: "/volunteers/Aryan Dubey.jpeg",
+  },
+  {
+    name: "Animesh Pathak",
+    role: "University of Allahabad",
+    imageUrl: "/volunteers/Animesh Pathak.jpg",
+  },
+  {
+    name: "Vaishnavi Mishra",
+    role: "United University",
+    imageUrl: "/volunteers/Vaishnavi Mishra.jpg",
+  },
+  {
+    name: "Gauri Gupta",
+    role: "UIT",
+    imageUrl: "/volunteers/Gauri Gupta.jpg",
+  },
+  {
+    name: "Piyush Verma",
+    role: "UIT",
+    imageUrl: "/volunteers/Piyush Verma.jpg",
+  },
+  {
+    name: "Aditya Tiwari",
+    role: "SHUATS",
+    imageUrl: "/volunteers/Aditya Tiwari.jpg",
+  },
+  {
+    name: "Mohammad Manhar",
+    role: "SHUATS",
+    imageUrl: "/volunteers/Mohammad Manhar.webp",
+  },
 ];
 
 const AmbassadorTeam = [
@@ -286,6 +336,16 @@ const AmbassadorTeam = [
     name: "Prajjwal Srivastava",
     role: "REC Mirzapur",
     imageUrl: "/ambassadors/prajjwal.png",
+  },
+  {
+    name: "Aaradhya Dubey",
+    role: "Kashi Institute of Technology ",
+    imageUrl: "/ambassadors/Aaradhya Dubey.png",
+  },
+  {
+    name: "Akanksha Pandey",
+    role: "Kashi Institute of Technology ",
+    imageUrl: "/ambassadors/Akanksha Pandey.jpg",
   }
 ];
 
