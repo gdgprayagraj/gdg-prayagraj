@@ -23,6 +23,36 @@ export default function Blogs() {
       link: "https://medium.com/@adityakumar2019.ak/my-first-devfest-a-volunteers-experience-at-devfest-2023-prayagraj-232035102743",
       image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-aYw7sGJfxM0x3XWN57M0g.png"
     },
+        {
+      title: "We Won 1st Place at GenAI Hackathon 2025 — Here’s What We Built and What We Learned",
+      author: "Kavaljeet Singh",
+      date: "March 8, 2026",
+      readTime: "7 min read",
+      category: "Event Experience",
+      description: "I’m still processing it, honestly. Standing in that room at UIT Prayagraj, hearing our team name called for 1st place after seven hours of non-stop building, debugging, and more coffee than I’d like to admit felt surreal. This is the story of how Team Nimbus won GenAI Hackathon 2025, what we built, and what I took away from one of the most intense days of my developer life",
+      link: "https://medium.com/@kavaljeetsingh.dev/we-won-1st-place-at-genai-hackathon-2025-heres-what-we-built-and-what-we-learned-374ead608b4b",
+      image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*aIFdd-Hp8c-2lEvr"
+    },
+        {
+      title: "My Design Journey at DevFest 2025",
+      author: "Manhar",
+      date: "March 7, 2026",
+      readTime: "4 min read",
+      category: "Event Experience",
+      description: "DevFests are often celebrated for the code, cloud, and the community. But sometimes we forget that valuable memories could also be made and opportunities might come to us.",
+      link: "https://medium.com/@itsmanhar0g/my-design-journey-at-devfest-2025-db912549a699",
+      image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*DFEcxgHSdJHAzqARf3-YVw.jpeg"
+    },
+        {
+      title: "Navigating the Future: My Journey as an Anchor and Core Team Member at DevFest Prayagraj 2025",
+      author: "Komal Pandey",
+      date: "Dec 26, 2025",
+      readTime: "5 min read",
+      category: "Event Experience",
+      description: "Standing in the spotlight of the United Institute of Technology Auditorium, looking out at a sea of 450+ eager developers, I realized that DevFest Prayagraj 2025 was not just a conference—it was a testament to the power of technical community.",
+      link: "https://medium.com/@komalpandey23139936/navigating-the-future-my-journey-as-an-anchor-and-core-team-member-at-devfest-prayagraj-2025-8f9b30099fa5",
+      image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*pZhhwgAWqDOybOTch9Vvvg.jpeg"
+    },
     {
       title: "Unmasking Fakes with Machine Learning — Kaggle Community Olympiad",
       author: "Mohd Shadab",
