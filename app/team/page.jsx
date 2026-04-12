@@ -309,6 +309,11 @@ const VolunteerTeam = [
     role: "UIT",
     imageUrl: "/volunteers/arpita.jpg",
   },
+  {
+    name: "Gautam Kumar Maurya",
+    role: "UIT",
+    imageUrl: "/volunteers/gautam.jpg",
+  },
 ];
 
 const AmbassadorTeam = [
