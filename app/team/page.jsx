@@ -252,7 +252,7 @@ const VolunteerTeam = [
   {
     name: "Mahin Farooqui",
     role: "United University",
-    imageUrl: "/volunteers/Mahin Farooqui.jpg",
+    imageUrl: "/volunteers/mahin.jpg",
   },
   {
     name: "Kavaljeet Singh",
