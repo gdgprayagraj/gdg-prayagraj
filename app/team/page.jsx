@@ -314,6 +314,16 @@ const VolunteerTeam = [
     role: "UIT",
     imageUrl: "/volunteers/gautam.jpg",
   },
+  {
+    name: "Shubhita Mishra",
+    role: "UCER",
+    imageUrl: "/volunteers/shubhita.jpg",
+  },
+  {
+    name: "Mahin Farooqui",
+    role: "United University",
+    imageUrl: "/volunteers/mahin.jpg",
+  },
 ];
 
 const AmbassadorTeam = [
