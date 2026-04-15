@@ -148,7 +148,7 @@ const CoreTeam = [
     name: "Reeti ",
     role: "Core Team",
     description: "Open Source & Leadership | Solving real world problems.",
-    imageUrl: "/core-team/reeti.jpg",
+    imageUrl: "/core-team/reeti.png",
     color: "bg-orange-500",
     socials: {
       portfolio: "",
