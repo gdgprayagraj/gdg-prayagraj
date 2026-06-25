@@ -4,26 +4,59 @@ import nodemailer from "nodemailer";
 import connectToDB from "@/db";
 import CodeOfConductSubmission from "@/db/models/code-of-conduct-submission";
 
-// Admin email addresses
-const ADMIN_EMAILS = process.env.ADMIN_EMAILS ? JSON.parse(process.env.ADMIN_EMAILS) : ["gdgprayag@gmail.com"];
+// Safely parse ADMIN_EMAILS env variable
+const ADMIN_EMAILS = (() => {
+  const envEmails = process.env.ADMIN_EMAILS;
+  if (!envEmails) {
+    return ["gdgprayag@gmail.com"];
+  }
+  
+  // Try to parse as JSON array first
+  try {
+    const parsed = JSON.parse(envEmails);
+    if (Array.isArray(parsed)) {
+      return parsed.map(email => email.trim());
+    }
+    if (typeof parsed === "string") {
+      return [parsed.trim()];
+    }
+  } catch (e) {
+    // If JSON parsing fails, fall back to splitting by comma
+  }
+
+  // Split by comma and filter out empty items
+  return envEmails
+    .split(",")
+    .map(email => email.trim())
+    .filter(email => email.length > 0);
+})();
 
 // Configure nodemailer transporter
 // Note: For production use, you should use a real SMTP service
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST || "smtp.gmail.com",
-  port: parseInt(process.env.SMTP_PORT || "587"),
-  secure: process.env.SMTP_SECURE === "true",
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASSWORD,
-  },
-});
+const hasSmtpCredentials = !!(process.env.SMTP_USER && process.env.SMTP_PASSWORD);
+
+const transporter = hasSmtpCredentials
+  ? nodemailer.createTransport({
+      host: process.env.SMTP_HOST || "smtp.gmail.com",
+      port: parseInt(process.env.SMTP_PORT || "587"),
+      secure: process.env.SMTP_SECURE === "true",
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD,
+      },
+    })
+  : null;
 
 // Helper function to send email
 async function sendEmail(to, subject, html) {
+  if (!transporter) {
+    console.log(`\n================ [DEVELOPMENT EMAIL LOG] ================\nTo: ${to}\nSubject: ${subject}\nBody preview:\n${html.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim().substring(0, 300)}...\n==========================================================\n`);
+    return { success: true, mocked: true };
+  }
+
   try {
     await transporter.sendMail({
-      from: process.env.SMTP_FROM,
+      from: process.env.SMTP_FROM || "GDG Prayagraj Web Team <gdgprayag@gmail.com>",
       to,
       subject,
       html,
