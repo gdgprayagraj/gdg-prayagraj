@@ -155,25 +155,83 @@ const CoreTeam = [
       linkedin: "https://www.linkedin.com/in/reeti-singh-09748b291/",
       github: "https://github.com/Reeti14",
     },
-  }
-];
-
-const VolunteerTeam = [
-  {
-    name: "Harsh Kushwaha",
-    role: "SHUATS",
-    imageUrl: "/volunteers/harsh.jpg",
   },
   {
-    name: "Arohi Singh",
-    role: "UIT",
-    imageUrl: "/volunteers/arohi.jpg",
+    name: "Shivaansh Singh",
+    role: "Core Team",
+    description: "B.Tech AIML student specializing in Android development & open-source.",
+    imageUrl: "/core-team/shivaansh_uit.jpeg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "",
+      linkedin: "https://www.linkedin.com/in/shivaansh-singh",
+      github: "https://github.com/ShivaanshSingh",
+    },
   },
   {
     name: "Adarsh Kesharwani",
-    role: "UIT",
-    imageUrl: "/volunteers/adarsh.jpg",
+    role: "Core Team",
+    description: "B.Tech CSE student & Full-stack Web Developer passionate about open-source.",
+    imageUrl: "/core-team/adarsh.jpeg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "https://adarshk.me/",
+      linkedin: "https://www.linkedin.com/in/adarsh-kesharwani-bba666315",
+      github: "https://github.com/Adarsh240-feb",
+    },
   },
+  {
+    name: "Arohi Singh",
+    role: "Core Team",
+    description: "AI/ML Engineering Student | Exploring machine learning, open source , and impactful technology",
+    imageUrl: "/core-team/arohi.jpg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "",
+      linkedin: "https://linkedin.com/in/arohi-singh-549974289/",
+      github: "https://github.com/ArohiSingh-debug",
+    },
+  },
+  {
+    name: "Harsh Kushwaha",
+    role: "Core Team",
+    description: "Software Engineer specializing in Flutter and Backend development with expertise in PostgreSQL, API design, scalable systems, and TypeScript.",
+    imageUrl: "/core-team/harsh.jpg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "",
+      linkedin: "https://www.linkedin.com/in/harsh-kushwaha-062761330/",
+      github: "https://github.com/Harsh15888",
+    },
+  },
+  {
+    name: "Sakshi Rai",
+    role: "Core Team",
+    description: "",
+    imageUrl: "/core-team/sakshi.jpg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "",
+      linkedin: "",
+      github: "",
+    },
+  },
+      {
+    name: "Shagun Ratan",
+    role: "Core Team",
+    description: "",
+    imageUrl: "/core-team/shagun.jpg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "",
+      linkedin: "",
+      github: "",
+    },
+  },
+
+];
+
+const VolunteerTeam = [
   {
     name: "Sanskar Dubey",
     role: "UU",
@@ -199,16 +257,6 @@ const VolunteerTeam = [
   //   role: "JKIAPT",
   //   imageUrl: "/volunteers/shreya.jpg",
   // },
-  {
-    name: "Sakshi Rai",
-    role: "SHUATS",
-    imageUrl: "/volunteers/sakshi.jpg",
-  },
-  {
-    name: "Shivaansh",
-    role: "UIT",
-    imageUrl: "/volunteers/shivaansh_uit.jpg",
-  },
   {
     name: "Ayushi Srivastava",
     role: "UCER",
@@ -319,6 +367,72 @@ const VolunteerTeam = [
     role: "UCER",
     imageUrl: "/volunteers/shubhita.jpg",
   },
+  {
+    name: "Riya Sharma",
+    role: "SIET",
+    imageUrl: "/volunteers/riyasharma.jpg",
+  },
+  {
+    name: "Astha Shukla",
+    role: "CMP Degree College",
+    imageUrl: "/volunteers/asthashukla.jpg",
+  },
+  {
+    name: "Sakshi Maurya",
+    role: "REC Mirzapur",
+    imageUrl: "/volunteers/sakshimaurya.jpg",
+  },
+  {
+    name: "Mubashshara Asim",
+    role: "United University",
+    imageUrl: "/volunteers/mubashsharaasim.jpg",
+  },
+  {
+    name: "Shivangi kumari",
+    role: "CMP Degree College",
+    imageUrl: "/volunteers/shivangi.jpg",
+  },
+  {
+    name: "Abhinisht Singh",
+    role: "United University",
+    imageUrl: "/volunteers/abhinishtsingh.jpg",
+  },
+  {
+    name: "Mukesh Kumar",
+    role: "BBS College of Engineering and Technology",
+    imageUrl: "/volunteers/mukeshkumar.jpeg",
+  },
+  {
+    name: "Gargi Soni",
+    role: "United University",
+    imageUrl: "/volunteers/gargisoni.jpg",
+  },
+  {
+    name: "Sweety Gupta",
+    role: "University of Allahabad",
+    imageUrl: "/volunteers/sweetygupta.jpg",
+  },
+  {
+    name: "Sakshi Pandey",
+    role: "UIT",
+    imageUrl: "/volunteers/sakshipandey.jpg",
+  },
+  {
+    name: "Ankur Tripathi",
+    role: "University of Allahabad",
+    imageUrl: "/volunteers/ankurtripathi.jpg",
+  },
+  {
+    name: "Amit yadav",
+    role: "United University",
+    imageUrl: "/volunteers/amityadav.jpg",
+  },
+  {
+    name: "Sneha Gupta",
+    role: "United University",
+    imageUrl: "/volunteers/snehagupta.jpeg",
+  },
+
 ];
 
 const AmbassadorTeam = [
@@ -398,13 +512,21 @@ export default function TeamPage() {
             >
               <div className="flex flex-col items-center">
                 <div className="w-48 h-48 mb-4 relative rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 ring-2 ring-transparent dark:hover:ring-[#4285F4]/30 transition-all duration-300">
-                  <Image
-                    src={member.imageUrl}
-                    alt={member.name}
-                    fill
-                    className="object-cover object-center"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+                  {member.imageUrl ? (
+                    <Image
+                      src={member.imageUrl}
+                      alt={member.name}
+                      fill
+                      className="object-cover object-center"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-400">
+                      <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                      </svg>
+                    </div>
+                  )}
                 </div>
                 <div className="text-center">
                   <h3 className="text-xl font-bold mb-1 text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
