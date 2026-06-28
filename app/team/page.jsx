@@ -156,6 +156,7 @@ const CoreTeam = [
       github: "https://github.com/Reeti14",
     },
   },
+  
   {
     name: "Adarsh Kesharwani",
     role: "Core Team",
