@@ -157,18 +157,6 @@ const CoreTeam = [
     },
   },
   {
-    name: "Shivaansh Singh",
-    role: "Core Team",
-    description: "B.Tech AIML student specializing in Android development & open-source.",
-    imageUrl: "/core-team/shivaansh_uit.jpeg",
-    color: "bg-orange-500",
-    socials: {
-      portfolio: "",
-      linkedin: "https://www.linkedin.com/in/shivaansh-singh",
-      github: "https://github.com/ShivaanshSingh",
-    },
-  },
-  {
     name: "Adarsh Kesharwani",
     role: "Core Team",
     description: "B.Tech CSE student & Full-stack Web Developer passionate about open-source.",
