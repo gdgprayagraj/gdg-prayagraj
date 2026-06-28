@@ -157,6 +157,7 @@ const CoreTeam = [
     },
   },
   
+
   {
     name: "Adarsh Kesharwani",
     role: "Core Team",
