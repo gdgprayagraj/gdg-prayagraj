@@ -156,7 +156,7 @@ const CoreTeam = [
       github: "https://github.com/Reeti14",
     },
   },
-  
+
 
   {
     name: "Adarsh Kesharwani",
@@ -226,6 +226,11 @@ const VolunteerTeam = [
     name: "Sanskar Dubey",
     role: "UU",
     imageUrl: "/volunteers/sanskar.png",
+  },
+    {
+    name: "Shivaansh Singh",
+    role: "UIT",
+    imageUrl: "/volunteers/shivaansh_uit.jpeg",
   },
   {
     name: "Shweta Mishra",
