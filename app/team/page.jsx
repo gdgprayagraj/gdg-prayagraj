@@ -403,11 +403,6 @@ const VolunteerTeam = [
     imageUrl: "/volunteers/gargisoni.jpg",
   },
   {
-    name: "Sweety Gupta",
-    role: "University of Allahabad",
-    imageUrl: "/volunteers/sweetygupta.jpg",
-  },
-  {
     name: "Sakshi Pandey",
     role: "UIT",
     imageUrl: "/volunteers/sakshipandey.jpg",
@@ -427,7 +422,36 @@ const VolunteerTeam = [
     role: "United University",
     imageUrl: "/volunteers/snehagupta.jpeg",
   },
-
+  {
+    name: "Sweety Gupta",
+    role: "University of Allahabad",
+    imageUrl: "/volunteers/sweetygupta.jpg",
+  },
+  {
+    name: "Shashank",
+    role: "SIET",
+    imageUrl: "/volunteers/shashank.jpg",
+  },
+  {
+    name: "Aditi Singh",
+    role: "UCER",
+    imageUrl: "/volunteers/aditisingh.jpg",
+  },
+  {
+    name: "Atul Dwivedi",
+    role: "SHUATS",
+    imageUrl: "/volunteers/atuldwivedi.jpg",
+  },
+  {
+    name: "Afreen Hashmi",
+    role: "SIET",
+    imageUrl: "/volunteers/afreenhashmi.jpg",
+  },
+  {
+    name: "Shubhansi Mishra",
+    role: "BBS college of engineering and technology",
+    imageUrl: "/volunteers/shubhansimishra.jpg",
+  },
 ];
 
 const AmbassadorTeam = [
