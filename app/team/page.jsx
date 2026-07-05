@@ -206,7 +206,7 @@ const CoreTeam = [
       github: "",
     },
   },
-      {
+  {
     name: "Shagun Ratan",
     role: "Core Team",
     description: "",
@@ -216,6 +216,32 @@ const CoreTeam = [
       portfolio: "",
       linkedin: "",
       github: "",
+    },
+  },
+  {
+    name: "Shweta Mishra",
+    role: "Core Team",
+    description:
+      "Aspiring Web Developer and CSE student with a passion for building modern web applications and contributing to open-source projects, currently serving as a FOSS Sub Admin.",
+    imageUrl: "/core-team/shweta.jpeg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "",
+      linkedin: "https://www.linkedin.com/in/shweta-mishra-209532312/",
+      github: "https://github.com/shweta-mi",
+    },
+  },
+  {
+    name: "Priyankar Shukla",
+    role: "Core Team",
+    description:
+      "Student of real-world tech, community leader, and Google Technologies enthusiast. Passionate about leadership, open source, AI, and building impactful tech communities.",
+    imageUrl: "/core-team/priyankar.jpeg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "https://g.dev/priyankar_shukla",
+      linkedin: "https://www.linkedin.com/in/priyankarshukla22",
+      github: "https://github.com/priyankar1434",
     },
   },
 
@@ -231,11 +257,6 @@ const VolunteerTeam = [
     name: "Shivaansh Singh",
     role: "UIT",
     imageUrl: "/volunteers/shivaansh_uit.jpeg",
-  },
-  {
-    name: "Shweta Mishra",
-    role: "SIET",
-    imageUrl: "/volunteers/shweta.jpg",
   },
   {
     name: "Abhishek Ojha",
@@ -261,11 +282,6 @@ const VolunteerTeam = [
     name: "Ayush Tripathi",
     role: "UCER",
     imageUrl: "/volunteers/ayush.jpg",
-  },
-  {
-    name: "Priyankar Shukla",
-    role: "CMP Degree College",
-    imageUrl: "/volunteers/priyankar.png",
   },
   {
     name: "Manvi Kesarwani",
