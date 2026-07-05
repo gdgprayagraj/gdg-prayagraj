@@ -231,7 +231,7 @@ const CoreTeam = [
       github: "https://github.com/shweta-mi",
     },
   },
-      {
+  {
     name: "Priyankar Shukla",
     role: "Core Team",
     description:
