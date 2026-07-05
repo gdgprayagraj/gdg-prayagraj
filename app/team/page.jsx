@@ -218,7 +218,7 @@ const CoreTeam = [
       github: "",
     },
   },
-      {
+  {
     name: "Shweta Mishra",
     role: "Core Team",
     description:
