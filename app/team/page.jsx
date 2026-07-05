@@ -206,7 +206,7 @@ const CoreTeam = [
       github: "",
     },
   },
-    {
+  {
     name: "Shagun Ratan",
     role: "Core Team",
     description: "",
