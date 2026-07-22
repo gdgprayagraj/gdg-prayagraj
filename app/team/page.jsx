@@ -639,9 +639,26 @@ export default function TeamPage() {
         </div>
       </div>
 
+      {/* Alumni Section */}
+      <div className="container mx-auto px-4 pb-12 border-t border-gray-200 dark:border-gray-800">
+        <h2 className="text-2xl font-bold my-8 text-center text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
+          Alumni
+        </h2>
+        <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto">
+          {AlumniTeam.map((member, index) => (
+            <div key={index} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] max-w-sm">
+              <TeamCard
+                member={member}
+                onClick={() => setSelectedMember(member)}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Volunteer Team Section */}
-      <div className="container mx-auto px-4 pb-12">
-        <h2 className="text-2xl font-bold mb-8 text-center text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
+      <div className="container mx-auto px-4 pb-12 border-t border-gray-200 dark:border-gray-800">
+        <h2 className="text-2xl font-bold my-8 text-center text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
           Volunteers
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
@@ -700,23 +717,6 @@ export default function TeamPage() {
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 {ambassador.role}
               </p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Alumni Section */}
-      <div className="container mx-auto px-4 pb-12 border-t border-gray-200 dark:border-gray-800">
-        <h2 className="text-2xl font-bold my-8 text-center text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
-          Alumni
-        </h2>
-        <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto">
-          {AlumniTeam.map((member, index) => (
-            <div key={index} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] max-w-sm">
-              <TeamCard
-                member={member}
-                onClick={() => setSelectedMember(member)}
-              />
             </div>
           ))}
         </div>
