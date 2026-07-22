@@ -32,19 +32,6 @@ const CoreTeam = [
     },
   },
   {
-    name: "Agamya Samuel",
-    role: "Core Team (Technical)",
-    description:
-      "Open Source Mentor | Specializes in secure, high-performance systems using DevOps and modern Web Technologies.",
-    imageUrl: "/core-team/agamya.png",
-    color: "bg-yellow-500",
-    socials: {
-      portfolio: "https://agamya.dev/",
-      linkedin: "https://www.linkedin.com/in/agamyasamuel",
-      github: "https://github.com/Agamya-Samuel",
-    },
-  },
-  {
     name: "Aditya Kumar",
     role: "Core Team",
     description:
@@ -73,33 +60,9 @@ const CoreTeam = [
     },
   },
   {
-    name: "Avarti Rastogi",
-    role: "Core Team",
-    description: "Co-organizer of FlutterFlow Developer Group Prayagraj and WikiClub Tech Contributor and also Core member of GDG Prayagraj.",
-    imageUrl: "/core-team/avarti.jpg",
-    color: "bg-indigo-500",
-    socials: {
-      portfolio: "https://avartirastogi.wixsite.com/my-portfolio-2",
-      linkedin: "https://www.linkedin.com/in/avarti-rastogi/",
-      github: "https://github.com/Avartii",
-    },
-  },
-  {
-    name: "Anjali Mishra",
-    role: "Core Team",
-    description: "Enthusiastic about machine learning with expertise in deep learning, AI, and web development.",
-    imageUrl: "/core-team/anjali.jpeg",
-    color: "bg-orange-500",
-    socials: {
-      portfolio: "https://warm-lemon-znl7x7.mystrikingly.com",
-      linkedin: "https://www.linkedin.com/in/anjali-mishra-606b94241/",
-      github: "https://github.com/Anjali-mish",
-    },
-  },
-  {
     name: "Mohd Shadab",
     role: "Core Team",
-    description: "MERN Stack Developer & Machine Learning Practitioner.",
+    description: "MERN Stack Developer & Machine Learning Practitioner.",
     imageUrl: "/core-team/mohd-sadab.jpg",
     color: "bg-orange-500",
     socials: {
@@ -111,7 +74,7 @@ const CoreTeam = [
   {
     name: "Anshuman Rai",
     role: "Core Team",
-    description: "MERN Stack Developer & Machine Learning Practitioner.",
+    description: "MERN Stack Developer & Machine Learning Practitioner.",
     imageUrl: "/core-team/anshuman.jpg",
     color: "bg-orange-500",
     socials: {
@@ -132,7 +95,7 @@ const CoreTeam = [
       github: "https://github.com/pushpaktiwarii",
     },
   },
-    {
+  {
     name: "Ebenezer Rao",
     role: "Core Team",
     description: "B.Tech AIML student interested in AI, web technologies and hands-on problem solving through real-world projects.",
@@ -156,8 +119,6 @@ const CoreTeam = [
       github: "https://github.com/Reeti14",
     },
   },
-
-
   {
     name: "Adarsh Kesharwani",
     role: "Core Team",
@@ -244,7 +205,46 @@ const CoreTeam = [
       github: "https://github.com/priyankar1434",
     },
   },
+];
 
+const AlumniTeam = [
+  {
+    name: "Agamya Samuel",
+    role: "Alumni",
+    description:
+      "Open Source Mentor | Specializes in secure, high-performance systems using DevOps and modern Web Technologies.",
+    imageUrl: "/alumni/agamya.png",
+    color: "bg-yellow-500",
+    socials: {
+      portfolio: "https://agamya.dev/",
+      linkedin: "https://www.linkedin.com/in/agamyasamuel",
+      github: "https://github.com/Agamya-Samuel",
+    },
+  },
+  {
+    name: "Avarti Rastogi",
+    role: "Alumni",
+    description: "Co-organizer of FlutterFlow Developer Group Prayagraj and WikiClub Tech Contributor and also Core member of GDG Prayagraj.",
+    imageUrl: "/alumni/avarti.jpg",
+    color: "bg-indigo-500",
+    socials: {
+      portfolio: "https://avartirastogi.wixsite.com/my-portfolio-2",
+      linkedin: "https://www.linkedin.com/in/avarti-rastogi/",
+      github: "https://github.com/Avartii",
+    },
+  },
+  {
+    name: "Anjali Mishra",
+    role: "Alumni",
+    description: "Enthusiastic about machine learning with expertise in deep learning, AI, and web development.",
+    imageUrl: "/alumni/anjali.jpeg",
+    color: "bg-orange-500",
+    socials: {
+      portfolio: "https://warm-lemon-znl7x7.mystrikingly.com",
+      linkedin: "https://www.linkedin.com/in/anjali-mishra-606b94241/",
+      github: "https://github.com/Anjali-mish",
+    },
+  },
 ];
 
 const VolunteerTeam = [
@@ -253,7 +253,7 @@ const VolunteerTeam = [
     role: "UU",
     imageUrl: "/volunteers/sanskar.png",
   },
-    {
+  {
     name: "Shivaansh Singh",
     role: "UIT",
     imageUrl: "/volunteers/shivaansh_uit.jpeg",
@@ -268,11 +268,6 @@ const VolunteerTeam = [
     role: "SIET",
     imageUrl: "/volunteers/komal.jpg",
   },
-  // {
-  //   name: "Shreya Chaubey",
-  //   role: "JKIAPT",
-  //   imageUrl: "/volunteers/shreya.jpg",
-  // },
   {
     name: "Ayushi Srivastava",
     role: "UCER",
@@ -290,7 +285,7 @@ const VolunteerTeam = [
   },
   {
     name: "Shreshth Srivastava",
-    role: "United University",
+    role: "United University",
     imageUrl: "/volunteers/shreshth.jpg",
   },
   {
@@ -513,6 +508,101 @@ const AmbassadorTeam = [
   }
 ];
 
+function TeamCard({ member, onClick }) {
+  return (
+    <div
+      onClick={onClick}
+      className="h-full bg-white dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 dark:shadow-[#4285F4]/5 dark:hover:shadow-[#4285F4]/10 cursor-pointer flex flex-col justify-between"
+    >
+      <div className="flex flex-col items-center w-full">
+        <div className="w-48 h-48 mb-4 relative rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 ring-2 ring-transparent dark:hover:ring-[#4285F4]/30 transition-all duration-300">
+          {member.imageUrl ? (
+            <Image
+              src={member.imageUrl}
+              alt={member.name}
+              fill
+              className="object-cover object-center"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-400">
+              <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+            </div>
+          )}
+        </div>
+        <div className="text-center">
+          <h3 className="text-xl font-bold mb-1 text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
+            {member.name}
+          </h3>
+          <p className="text-[#4285F4] dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#4285F4] dark:to-blue-400 font-medium text-sm mb-2">
+            {member.role}
+          </p>
+          <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
+            {member.description}
+          </p>
+          {member.socials && (
+            <div className="flex justify-center items-center space-x-8">
+              {member.socials.portfolio && member.socials.portfolio !== "#" && (
+                <a
+                  href={member.socials.portfolio}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="bg-white dark:bg-[#1F2937] p-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-[#374151] transition-all duration-300 hover:scale-110 dark:shadow-lg dark:shadow-blue-500/20 dark:hover:shadow-blue-500/30"
+                >
+                  <svg
+                    className="w-5 h-5 text-gray-700 dark:text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                  </svg>
+                </a>
+              )}
+              {member.socials.linkedin && member.socials.linkedin !== "#" && (
+                <a
+                  href={member.socials.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="bg-white dark:bg-[#1F2937] p-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-[#374151] transition-all duration-300 hover:scale-110 dark:shadow-lg dark:shadow-blue-500/20 dark:hover:shadow-blue-500/30"
+                >
+                  <svg
+                    className="w-5 h-5 text-gray-700 dark:text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </a>
+              )}
+              {member.socials.github && member.socials.github !== "#" && (
+                <a
+                  href={member.socials.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="bg-white dark:bg-[#1F2937] p-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-[#374151] transition-all duration-300 hover:scale-110 dark:shadow-lg dark:shadow-blue-500/20 dark:hover:shadow-blue-500/30"
+                >
+                  <svg
+                    className="w-5 h-5 text-gray-700 dark:text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                  </svg>
+                </a>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function TeamPage() {
   const [selectedMember, setSelectedMember] = useState(null);
 
@@ -540,95 +630,11 @@ export default function TeamPage() {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {CoreTeam.map((member, index) => (
-            <div
+            <TeamCard
               key={index}
+              member={member}
               onClick={() => setSelectedMember(member)}
-              className="bg-white dark:bg-[#111827]/80 dark:backdrop-blur-sm rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 dark:shadow-[#4285F4]/5 dark:hover:shadow-[#4285F4]/10 cursor-pointer"
-            >
-              <div className="flex flex-col items-center">
-                <div className="w-48 h-48 mb-4 relative rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 ring-2 ring-transparent dark:hover:ring-[#4285F4]/30 transition-all duration-300">
-                  {member.imageUrl ? (
-                    <Image
-                      src={member.imageUrl}
-                      alt={member.name}
-                      fill
-                      className="object-cover object-center"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-gray-200 dark:bg-gray-700 text-gray-400">
-                      <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                      </svg>
-                    </div>
-                  )}
-                </div>
-                <div className="text-center">
-                  <h3 className="text-xl font-bold mb-1 text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
-                    {member.name}
-                  </h3>
-                  <p className="text-[#4285F4] dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#4285F4] dark:to-blue-400 font-medium text-sm mb-2">
-                    {member.role}
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-                    {member.description}
-                  </p>
-                  <div className="flex justify-center items-center space-x-8">
-                    {member.socials.portfolio && member.socials.portfolio !== "#" && (
-                      <a
-                        href={member.socials.portfolio}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="bg-white dark:bg-[#1F2937] p-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-[#374151] transition-all duration-300 hover:scale-110 dark:shadow-lg dark:shadow-blue-500/20 dark:hover:shadow-blue-500/30"
-                      >
-                        <svg
-                          className="w-5 h-5 text-gray-700 dark:text-white"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                        </svg>
-                      </a>
-                    )}
-                    {member.socials.linkedin && member.socials.linkedin !== "#" && (
-                      <a
-                        href={member.socials.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="bg-white dark:bg-[#1F2937] p-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-[#374151] transition-all duration-300 hover:scale-110 dark:shadow-lg dark:shadow-blue-500/20 dark:hover:shadow-blue-500/30"
-                      >
-                        <svg
-                          className="w-5 h-5 text-gray-700 dark:text-white"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
-                      </a>
-                    )}
-                    {member.socials.github && member.socials.github !== "#" && (
-                      <a
-                        href={member.socials.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={(e) => e.stopPropagation()}
-                        className="bg-white dark:bg-[#1F2937] p-2.5 rounded-full hover:bg-gray-100 dark:hover:bg-[#374151] transition-all duration-300 hover:scale-110 dark:shadow-lg dark:shadow-blue-500/20 dark:hover:shadow-blue-500/30"
-                      >
-                        <svg
-                          className="w-5 h-5 text-gray-700 dark:text-white"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                        </svg>
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
+            />
           ))}
         </div>
       </div>
@@ -694,6 +700,23 @@ export default function TeamPage() {
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 {ambassador.role}
               </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Alumni Section */}
+      <div className="container mx-auto px-4 pb-12 border-t border-gray-200 dark:border-gray-800">
+        <h2 className="text-2xl font-bold my-8 text-center text-gray-800 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:via-purple-200 dark:to-pink-200">
+          Alumni
+        </h2>
+        <div className="flex flex-wrap justify-center gap-6 max-w-7xl mx-auto">
+          {AlumniTeam.map((member, index) => (
+            <div key={index} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] max-w-sm">
+              <TeamCard
+                member={member}
+                onClick={() => setSelectedMember(member)}
+              />
             </div>
           ))}
         </div>
