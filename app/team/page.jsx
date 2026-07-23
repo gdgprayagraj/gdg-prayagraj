@@ -196,7 +196,7 @@ const CoreTeam = [
     name: "Priyankar Shukla",
     role: "Core Team",
     description:
-      "Student of real-world tech, community leader, and Google Technologies enthusiast. Passionate about leadership, open source, AI, and building impactful tech communities.",
+      "Student of Real World Tech | Community Leader | Google Technologies Enthusiast | Passionate about Leadership, Open Source, AI & Building Impactful Tech Communities.",
     imageUrl: "/core-team/priyankar.jpeg",
     color: "bg-orange-500",
     socials: {
