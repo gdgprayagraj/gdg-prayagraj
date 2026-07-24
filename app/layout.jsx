@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
                   <div className="flex items-center gap-2">
                     <Image
                       src="/gdg-logo-new.svg"
-                      alt="GDG Prayagraj Logo"
+                      alt="GDG Prayagraj"
                       width={480}
                       height={80}
                       className="w-52 sm:w-64"
