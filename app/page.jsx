@@ -52,7 +52,7 @@ export default function Home() {
             <h3 className="text-xl sm:text-2xl lg:text-4xl font-bold mb-2 text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200">
               <CounterAnimation 
                 target={30} 
-                suffix="+" 
+                suffix="+ " 
                 duration={2000}
                 className="text-xl sm:text-2xl lg:text-4xl font-bold text-gray-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-blue-200 dark:to-purple-200"
               />
