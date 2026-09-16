@@ -259,24 +259,9 @@ const VolunteerTeam = [
     imageUrl: "/volunteers/shivaansh_uit.jpeg",
   },
   {
-    name: "Abhishek Ojha",
-    role: "SIET",
-    imageUrl: "/volunteers/abhishek.jpg",
-  },
-  {
     name: "Komal Pandey",
     role: "SIET",
     imageUrl: "/volunteers/komal.jpg",
-  },
-  {
-    name: "Ayushi Srivastava",
-    role: "UCER",
-    imageUrl: "/volunteers/ayushi.jpg",
-  },
-  {
-    name: "Ayush Tripathi",
-    role: "UCER",
-    imageUrl: "/volunteers/ayush.jpg",
   },
   {
     name: "Manvi Kesarwani",
@@ -342,11 +327,6 @@ const VolunteerTeam = [
     name: "Gauri Gupta",
     role: "UIT",
     imageUrl: "/volunteers/Gauri Gupta.jpg",
-  },
-  {
-    name: "Piyush Verma",
-    role: "UIT",
-    imageUrl: "/volunteers/Piyush Verma.jpg",
   },
   {
     name: "Aditya Tiwari",
