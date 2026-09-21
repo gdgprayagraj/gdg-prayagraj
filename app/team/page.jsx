@@ -269,11 +269,6 @@ const VolunteerTeam = [
     imageUrl: "/volunteers/manvi.jpg",
   },
   {
-    name: "Shreshth Srivastava",
-    role: "United University",
-    imageUrl: "/volunteers/shreshth.jpg",
-  },
-  {
     name: "Sakshi Pandey",
     role: "United University",
     imageUrl: "/volunteers/Sakshi Pandey.jpg",
