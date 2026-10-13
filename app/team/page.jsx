@@ -438,6 +438,16 @@ const VolunteerTeam = [
     role: "BBS college of engineering and technology",
     imageUrl: "/volunteers/shubhansimishra.jpg",
   },
+  {
+    name: "Siddhi Sahu",
+    role: "SIET",
+    imageUrl: "/volunteers/siddhisahu.jpg",
+  },
+  {
+    name: "Akshara Tripathi",
+    role: "United University",
+    imageUrl: "/volunteers/aksharatripathi.jpg",
+  },
 ];
 
 const AmbassadorTeam = [
