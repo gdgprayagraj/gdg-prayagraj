@@ -279,11 +279,6 @@ const VolunteerTeam = [
     imageUrl: "/volunteers/Sohrab Rizvi.jpg",
   },
   {
-    name: "Paridhi Singh",
-    role: "UCER",
-    imageUrl: "/volunteers/Paridhi Singh.jpg",
-  },
-  {
     name: "Mahin Farooqui",
     role: "United University",
     imageUrl: "/volunteers/mahin.jpg",
@@ -322,16 +317,6 @@ const VolunteerTeam = [
     name: "Gauri Gupta",
     role: "UIT",
     imageUrl: "/volunteers/Gauri Gupta.jpg",
-  },
-  {
-    name: "Aditya Tiwari",
-    role: "SHUATS",
-    imageUrl: "/volunteers/Aditya Tiwari.jpg",
-  },
-  {
-    name: "Mohammad Manhar",
-    role: "SHUATS",
-    imageUrl: "/volunteers/Mohammad Manhar.webp",
   },
   {
     name: "Arpita Jain",
@@ -417,11 +402,6 @@ const VolunteerTeam = [
     name: "Shashank",
     role: "SIET",
     imageUrl: "/volunteers/shashank.jpg",
-  },
-  {
-    name: "Aditi Singh",
-    role: "UCER",
-    imageUrl: "/volunteers/aditisingh.jpg",
   },
   {
     name: "Atul Dwivedi",
